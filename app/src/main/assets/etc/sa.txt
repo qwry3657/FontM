@@ -1,0 +1,31 @@
+    
+    <!-- fucek -->
+    <family customizationType="new-named-family" name="fucek">
+        <font weight="400" style="normal">Fucek.ttf</font>
+    </family>
+    <alias name="fucek-semi-bold" to="fucek" weight="600" />
+    <alias name="fucek-bold" to="fucek" weight="700" />
+    <alias name="times" to="fucek" />
+    <alias name="times new roman" to="fucek" />
+    <alias name="palatino" to="fucek" />
+    <alias name="georgia" to="fucek" />
+    <alias name="baskerville" to="fucek" />
+    <alias name="goudy" to="fucek" />
+    <alias name="fantasy" to="fucek" />
+    <alias name="ITC Stone Serif" to="fucek" />
+    
+    <!-- nothing -->
+    <family customizationType="new-named-family" name="nothing">
+        <font weight="400" style="normal">nothing.ttf</font>
+    </family>
+    <alias name="nothing-semi-bold" to="nothing" weight="600" />
+    <alias name="nothing-bold" to="nothing" weight="700" />
+    <alias name="times" to="nothing" />
+    <alias name="times new roman" to="nothing" />
+    <alias name="palatino" to="nothing" />
+    <alias name="georgia" to="nothing" />
+    <alias name="baskerville" to="nothing" />
+    <alias name="goudy" to="nothing" />
+    <alias name="fantasy" to="nothing" />
+    <alias name="ITC Stone Serif" to="nothing" />
+</fonts-modification>
