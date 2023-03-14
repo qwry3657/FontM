@@ -59,6 +59,8 @@ public class ModuleUtil {
         Shell.cmd("touch " + MODULE_DIR + "/common/system.prop").exec();
         Shell.cmd("mkdir -p " + MODULE_DIR + "/system").exec();
         Shell.cmd("mkdir -p " + MODULE_DIR + "/system/product").exec();
+        Shell.cmd("mkdir -p " + MODULE_DIR + "/system/product/fonts").exec();
+        Shell.cmd("mkdir -p " + MODULE_DIR + "/system/product/etc").exec();
         Shell.cmd("mkdir -p " + MODULE_DIR + "/system/product/overlay").exec();
         Shell.cmd("printf '#!/system/bin/sh\n" +
                 "# Please do not hardcode /magisk/modname/... ; instead, please use $MODDIR/...\n" +
@@ -69,6 +71,8 @@ public class ModuleUtil {
                 "# More info in the main Magisk thread\n' > " + MODULE_DIR + "/service.sh").exec();
         Log.e("ModuleCheck", "Magisk module successfully created!");
 
+        copyEtc(context);
+        copyFonts(context);
         copyOverlays(context);
     }
 
@@ -81,9 +85,68 @@ public class ModuleUtil {
         return false;
     }
 
+    static void copyFonts(Context context) {
+
+        String[] fonts = new String[0];
+        try {
+            fonts = context.getAssets().list("Fonts");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String data_dir = context.getFilesDir().toString();
+        // Clean temporary directory
+        Shell.cmd("rm -rf " + data_dir).exec();
+        File device_file = new File(data_dir + "/Fonts/");
+        device_file.mkdirs();
+
+        for (String font : fonts) {
+            File file = new File(data_dir + "/Fonts/" + font);
+            if (!file.exists()) {
+                try {
+                    copyFileTo(context, "Fonts/" + font, data_dir + "/Fonts/" + font);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            Shell.cmd("cp -f " + data_dir + "/Fonts/" + font + " " + MODULE_DIR + "/system/product/fonts/" + font).exec();
+        }
+        RootUtil.setPermissionsRecursively(644, MODULE_DIR + "/system/product/fonts/");
+        // Clean temporary directory
+        Shell.cmd("rm -rf " + data_dir + "/Fonts").exec();
+    }
+    
+    static void copyEtc(Context context) {
+
+        String[] etc = new String[0];
+        try {
+            etc = context.getAssets().list("Etc");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String data_dir = context.getFilesDir().toString();
+        // Clean temporary directory
+        Shell.cmd("rm -rf " + data_dir).exec();
+        File device_file = new File(data_dir + "/Etc/");
+        device_file.mkdirs();
+
+        for (String sa : etc) {
+            File file = new File(data_dir + "/Etc/" + sa);
+            if (!file.exists()) {
+                try {
+                    copyFileTo(context, "Etc/" + sa, data_dir + "/Etc/" + sa);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            Shell.cmd("cp -f " + data_dir + "/Etc/" + sa + " " + MODULE_DIR + "/system/product/etc/" + sa).exec();
+        }
+        RootUtil.setPermissionsRecursively(644, MODULE_DIR + "/system/product/etc/");
+        // Clean temporary directory
+        Shell.cmd("rm -rf " + data_dir + "/Etc").exec();
+    }
+
     static void copyOverlays(Context context) {
 
-        String ext = "apk";
         String[] overlays = new String[0];
         try {
             overlays = context.getAssets().list("Overlays");
