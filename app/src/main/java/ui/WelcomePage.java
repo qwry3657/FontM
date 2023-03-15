@@ -39,6 +39,22 @@ public class WelcomePage extends AppCompatActivity {
         loadingDialog = new LoadingDialog(this);
 
         // Continue button
+        if (PrefConfig.loadPrefInt(Font_Manager.getAppContext(), "versionCode") < BuildConfig.VERSION_CODE && PrefConfig.loadPrefInt(Font_Manager.getAppContext(), "versionCode") != 0) {
+            reboot_reminder.setVisibility(View.VISIBLE);
+            Button reboot_now = findViewById(R.id.reboot_phone);
+            reboot_now.setOnClickListener(v -> {
+                LoadingDialog rebootingDialog = new LoadingDialog(HomePage.this);
+                rebootingDialog.show("Rebooting in 3 seconds");
+
+                runOnUiThread(() -> new Handler().postDelayed(() -> {
+                    rebootingDialog.hide();
+
+                    Shell.cmd("su -c 'svc power reboot'").exec();
+                }, 3000));
+            });
+        }
+
+        // Continue button
         Button checkRoot = findViewById(R.id.checkRoot);
 
         // Dialog to show if root not found
