@@ -19,6 +19,7 @@ import com.sajjad.fontmanager.config.PrefConfig;
 import com.sajjad.fontmanager.utils.ModuleUtil;
 import com.sajjad.fontmanager.utils.OverlayUtils;
 import com.sajjad.fontmanager.utils.RootUtil;
+import com.topjohnwu.superuser.Shell;
 
 import java.io.IOException;
 
@@ -40,10 +41,9 @@ public class WelcomePage extends AppCompatActivity {
 
         // Continue button
         if (PrefConfig.loadPrefInt(Font_Manager.getAppContext(), "versionCode") < BuildConfig.VERSION_CODE && PrefConfig.loadPrefInt(Font_Manager.getAppContext(), "versionCode") != 0) {
-            
             Button reboot_now = findViewById(R.id.reboot_phone);
             reboot_now.setOnClickListener(v -> {
-                LoadingDialog rebootingDialog = new LoadingDialog(HomePage.this);
+                LoadingDialog rebootingDialog = new LoadingDialog(WelcomePage.this);
                 rebootingDialog.show("Rebooting in 3 seconds");
 
                 runOnUiThread(() -> new Handler().postDelayed(() -> {
