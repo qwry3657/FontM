@@ -2,7 +2,7 @@ name: build_release_apk
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "beta" ]
   
   workflow_dispatch:
 
