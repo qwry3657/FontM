@@ -39,7 +39,8 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: "Iconify v${{ env.VERSION_NAME }} Dev (#${{github.run_number}})"
+          name: "FontM v${{ env.VERSION_NAME }} test (#${{github.run_number}})"
           path: app/build/outputs/apk/release/*.apk
           retention-days: 1
           if-no-files-found: error
+
