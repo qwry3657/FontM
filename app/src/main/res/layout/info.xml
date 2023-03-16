@@ -74,6 +74,17 @@
 
                 </LinearLayout>
             </LinearLayout>
+            
+            <TextView
+                android:textSize="20.0dip"
+                android:textStyle="bold"
+                android:textColor="@color/textColorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/container_marginSide"
+                android:layout_marginBottom="@dimen/container_marginSide"
+                android:text="About"
+                android:layout_marginStart="30.0dip" />
 
             <LinearLayout
                 android:layout_width="match_parent"
