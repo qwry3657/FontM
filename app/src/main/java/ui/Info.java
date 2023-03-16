@@ -31,14 +31,6 @@ public class Info extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info);
 
-        // Header
-        CollapsingToolbarLayout collapsing_toolbar = findViewById(R.id.collapsing_toolbar);
-        collapsing_toolbar.setTitle("About");
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-
         // App version
         ViewGroup appInfo = findViewById(R.id.appInfo);
         appInfo.setOnClickListener(v -> {
@@ -99,7 +91,7 @@ public class Info extends AppCompatActivity {
         TextView credits = findViewById(R.id.credits);
         credits.setText("Drdisagree");
         TextView creditsTo = findViewById(R.id.creditsTo);
-        creditsTo.setText("Pro sir & Font_Manager dev.");
+        creditsTo.setText("Pro sir & Iconify dev.");
         
         // Iconify
         ViewGroup iconify = findViewById(R.id.iconify);
