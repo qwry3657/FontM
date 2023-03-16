@@ -38,4 +38,5 @@ jobs:
         with:
           name: "FontM_v${{github.run_number}}"
           path: app/build/outputs/apk/release/*.apk
+          retention-days: 1
           if-no-files-found: error
