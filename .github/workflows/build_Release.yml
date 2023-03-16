@@ -1,4 +1,4 @@
-name: build_release_apk
+name: Build Debug APK
 
 on:
   push:
@@ -20,26 +20,26 @@ jobs:
           distribution: 'temurin'
           cache: gradle
 
-      - name: Permission_for_gradlew
+      - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
       - name: Get application version name
-         run: echo "VERSION_NAME=$(${{github.workspace}}/gradlew -q printVersionName)" >> $GITHUB_ENV
+        run: echo "VERSION_NAME=$(${{github.workspace}}/gradlew -q printVersionName)" >> $GITHUB_ENV
 
-      - name: App_version_name
+      - name: Bump application version code
         uses: chkfung/android-version-actions@v1.2.1
         with:
           gradlePath: app/build.gradle
           versionCode: ${{github.run_number}}
-          versionName: "${{ env.VERSION_NAME }} test ${{github.run_number}}"
+          versionName: "${{ env.VERSION_NAME }} test (#${{github.run_number}})"
 
-      - name: Building_apk
+      - name: Build with Gradle
         run: ./gradlew assembleRelease
 
-      - name: Uploading_file
+      - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: "FontM_v${{github.run_number}}"
+          name: "Iconify v${{ env.VERSION_NAME }} Dev (#${{github.run_number}})"
           path: app/build/outputs/apk/release/*.apk
           retention-days: 1
           if-no-files-found: error
