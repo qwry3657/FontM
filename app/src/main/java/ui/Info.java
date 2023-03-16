@@ -33,7 +33,7 @@ public class Info extends AppCompatActivity {
         
         // Header
         CollapsingToolbarLayout collapsing_toolbar = findViewById(R.id.collapsing_toolbar);
-        collapsing_toolbar.setTitle("");
+        collapsing_toolbar.setTitle("🔴🔵🔴");
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
@@ -71,6 +71,7 @@ public class Info extends AppCompatActivity {
         telegramDesc.setText("Follow to get latest news & updates.");
 
         // Devs
+
         // Sã Śâjjãd
         ViewGroup sa = findViewById(R.id.sa);
         sa.setOnClickListener(v -> {
