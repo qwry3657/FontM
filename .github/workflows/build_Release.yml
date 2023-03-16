@@ -23,8 +23,8 @@ jobs:
       - name: Permission_for_gradlew
         run: chmod +x gradlew
 
-     - name: Get application version name
-        run: echo "VERSION_NAME=$(${{github.workspace}}/gradlew -q printVersionName)" >> $GITHUB_ENV
+      - name: Get application version name
+         run: echo "VERSION_NAME=$(${{github.workspace}}/gradlew -q printVersionName)" >> $GITHUB_ENV
 
       - name: App_version_name
         uses: chkfung/android-version-actions@v1.2.1
