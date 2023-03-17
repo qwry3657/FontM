@@ -3,17 +3,10 @@
 		android:height="24.0dp"
 		android:viewportWidth="24.0"
 		android:viewportHeight="24.0">
+	
 	<path
 		android:fillColor="#00FFFFFF"
-		android:strokeColor="#FFFFFFFF"
-		android:strokeWidth="1.6559999"
-		android:strokeLineJoin="round"
-		android:fillType="nonZero"
-		android:strokeLineCap="round"
-		android:pathData="M5.82,-2.75L10.86,-2.75"/>
-	<path
-		android:fillColor="#00FFFFFF"
-		android:strokeColor="#FFF4FFCB"
+		android:strokeColor="@color/colorContainerOverlay"
 		android:strokeWidth="1.6800001"
 		android:strokeLineJoin="round"
 		android:fillType="nonZero"

@@ -29,7 +29,6 @@ public class en extends AppCompatActivity {
     private static final String AURORA_KEY = "SaOverlaysFONTS1.overlay";
     private static final String GRADICON_KEY = "SaOverlaysFONTS2.overlay";
     private static final String LORN_KEY = "SaOverlaysFONTS3.overlay";
-    /*
     private static final String PLUMPY_KEY = "SaOverlaysFONTS4.overlay";
     private static final String ACHERUS_KEY = "SaOverlaysFONTS5.overlay";
     private static final String CIRCULAR_KEY = "SaOverlaysFONTS6.overlay";
@@ -42,12 +41,10 @@ public class en extends AppCompatActivity {
     private static final String SAM_KEY = "SaOverlaysFONTS13.overlay";
     private static final String VICTOR_KEY = "SaOverlaysFONTS14.overlay";
     private static final String ACLONICA_KEY = "SaOverlaysFONTS15.overlay";
-    */
+
     LinearLayout[] Container;
-    LinearLayout AuroraContainer, GradiconContainer, LornContainer;
-    // PlumpyContainer, AcherusContainer, CircularContainer, FilledContainer, KaiContainer, OosContainer, OutlineContainer, PuiContainer, RoundedContainer, SamContainer, VictorContainer, AclonicaContainer;
-    Button Aurora_Enable, Aurora_Disable, Gradicon_Enable, Gradicon_Disable, Lorn_Enable, Lorn_Disable;
-    // Plumpy_Enable, Plumpy_Disable, Acherus_Enable, Acherus_Disable, Circular_Enable, Circular_Disable, Filled_Enable, Filled_Disable, Kai_Enable, Kai_Disable, Oos_Enable, Oos_Disable, Outline_Enable, Outline_Disable, Pui_Enable, Pui_Disable, Rounded_Enable, Rounded_Disable, Sam_Enable, Sam_Disable, Victor_Enable, Victor_Disable, Aclonica_Enable, Aclonica_Disable;
+    LinearLayout AuroraContainer, GradiconContainer, LornContainer, PlumpyContainer, AcherusContainer, CircularContainer, FilledContainer, KaiContainer, OosContainer, OutlineContainer, PuiContainer, RoundedContainer, SamContainer, VictorContainer, AclonicaContainer;
+    Button Aurora_Enable, Aurora_Disable, Gradicon_Enable, Gradicon_Disable, Lorn_Enable, Lorn_Disable, Plumpy_Enable, Plumpy_Disable, Acherus_Enable, Acherus_Disable, Circular_Enable, Circular_Disable, Filled_Enable, Filled_Disable, Kai_Enable, Kai_Disable, Oos_Enable, Oos_Disable, Outline_Enable, Outline_Disable, Pui_Enable, Pui_Disable, Rounded_Enable, Rounded_Disable, Sam_Enable, Sam_Disable, Victor_Enable, Victor_Disable, Aclonica_Enable, Aclonica_Disable;
     private ViewGroup container;
     LoadingDialog loadingDialog;
 
@@ -71,24 +68,22 @@ public class en extends AppCompatActivity {
         // Icon Pack list items
         container = (ViewGroup) findViewById(R.id.icon_packs_list);
 
-        // Icon Pack add items in list
-        addItem(R.id.iconPack_aurora_container, "Fucek Font", "Tap to enable/desable font.", R.id.iconPack_aurora_enable, R.id.iconPack_aurora_disable);
-        addItem(R.id.iconPack_gradicon_container, "Nothing Font", "Tap to enable/desable font.", R.id.iconPack_gradicon_enable, R.id.iconPack_gradicon_disable);
+        // Font.add items in list
+        addItem(R.id.iconPack_aurora_container, "Fucek", "Tap to enable/desable font.", R.id.iconPack_aurora_enable, R.id.iconPack_aurora_disable);
+        addItem(R.id.iconPack_gradicon_container, "Nothing", "Tap to enable/desable font.", R.id.iconPack_gradicon_enable, R.id.iconPack_gradicon_disable);
         addItem(R.id.iconPack_lorn_container, "Noto Serif", "Tap to enable/desable font.", R.id.iconPack_lorn_enable, R.id.iconPack_lorn_disable);
-        /*
-        addItem(R.id.iconPack_plumpy_container, "Plumpy", "Tap to enable/desable font.", R.id.iconPack_plumpy_enable, R.id.iconPack_plumpy_disable);
-        addItem(R.id.iconPack_acherus_container, "Acherus", "Tap to enable/desable font.", R.id.iconPack_acherus_enable, R.id.iconPack_acherus_disable);
-        addItem(R.id.iconPack_circular_container, "Circular", "Tap to enable/desable font.", R.id.iconPack_circular_enable, R.id.iconPack_circular_disable);
-        addItem(R.id.iconPack_filled_container, "Filled", "Tap to enable/desable font.", R.id.iconPack_filled_enable, R.id.iconPack_filled_disable);
-        addItem(R.id.iconPack_kai_container, "Kai", "Tap to enable/desable font.", R.id.iconPack_kai_enable, R.id.iconPack_kai_disable);
-        addItem(R.id.iconPack_oos_container, "OOS", "Tap to enable/desable font.", R.id.iconPack_oos_enable, R.id.iconPack_oos_disable);
-        addItem(R.id.iconPack_outline_container, "Outline", "Tap to enable/desable font.", R.id.iconPack_outline_enable, R.id.iconPack_outline_disable);
-        addItem(R.id.iconPack_pui_container, "PUI", "Tap to enable/desable font.", R.id.iconPack_pui_enable, R.id.iconPack_pui_disable);
-        addItem(R.id.iconPack_rounded_container, "Tap to enable/desable font.", R.id.iconPack_rounded_enable, R.id.iconPack_rounded_disable);
-        addItem(R.id.iconPack_sam_container, "Sam", "Tap to enable/desable font.", R.id.iconPack_sam_enable, R.id.iconPack_sam_disable);
-        addItem(R.id.iconPack_victor_container, "Tap to enable/desable font.", R.id.iconPack_victor_enable, R.id.iconPack_victor_disable);
-        addItem(R.id.iconPack_aclonica_container, "Aclonica", "Tap to enable/desable font.", R.id.iconPack_aclonica_enable, R.id.iconPack_aclonica_disable);
-        */
+        addItem(R.id.iconPack_plumpy_container, "Linnote Bold", "Tap to enable/desable font.", R.id.iconPack_plumpy_enable, R.id.iconPack_plumpy_disable);
+        addItem(R.id.iconPack_acherus_container, "Tinkerbell", "Tap to enable/desable font.", R.id.iconPack_acherus_enable, R.id.iconPack_acherus_disable);
+        addItem(R.id.iconPack_circular_container, "Samsung One", "Tap to enable/desable font.", R.id.iconPack_circular_enable, R.id.iconPack_circular_disable);
+        addItem(R.id.iconPack_filled_container, "Corporativ Sans Rounded", "Tap to enable/desable font.", R.id.iconPack_filled_enable, R.id.iconPack_filled_disable);
+        addItem(R.id.iconPack_kai_container, "FluidSans", "Tap to enable/desable font.", R.id.iconPack_kai_enable, R.id.iconPack_kai_disable);
+        addItem(R.id.iconPack_oos_container, "Dosis", "Tap to enable/desable font.", R.id.iconPack_oos_enable, R.id.iconPack_oos_disable);
+        addItem(R.id.iconPack_outline_container, "Sfpro", "Tap to enable/desable font.", R.id.iconPack_outline_enable, R.id.iconPack_outline_disable);
+        addItem(R.id.iconPack_pui_container, "Opensans", "Tap to enable/desable font.", R.id.iconPack_pui_enable, R.id.iconPack_pui_disable);
+        addItem(R.id.iconPack_rounded_container, "Cagliostro", "Tap to enable/desable font.", R.id.iconPack_rounded_enable, R.id.iconPack_rounded_disable);
+        addItem(R.id.iconPack_sam_container, "Chula", "Tap to enable/desable font.", R.id.iconPack_sam_enable, R.id.iconPack_sam_disable);
+        addItem(R.id.iconPack_victor_container, "Volte-Rounded", "Tap to enable/desable font.", R.id.iconPack_victor_enable, R.id.iconPack_victor_disable);
+        addItem(R.id.iconPack_aclonica_container, "Arial Rounded", "Tap to enable/desable font.", R.id.iconPack_aclonica_enable, R.id.iconPack_aclonica_disable);
 
         // Declaration of Aurora
         AuroraContainer = findViewById(R.id.iconPack_aurora_container);
@@ -105,7 +100,6 @@ public class en extends AppCompatActivity {
         Lorn_Enable = findViewById(R.id.iconPack_lorn_enable);
         Lorn_Disable = findViewById(R.id.iconPack_lorn_disable);
 
-/*
         // Declaration of Plumpy
         PlumpyContainer = findViewById(R.id.iconPack_plumpy_container);
         Plumpy_Enable = findViewById(R.id.iconPack_plumpy_enable);
@@ -165,18 +159,15 @@ public class en extends AppCompatActivity {
         AclonicaContainer = findViewById(R.id.iconPack_aclonica_container);
         Aclonica_Enable = findViewById(R.id.iconPack_aclonica_enable);
         Aclonica_Disable = findViewById(R.id.iconPack_aclonica_disable);
-        */
 
 
         // List of Icon Pack
-        Container = new LinearLayout[]{AuroraContainer, GradiconContainer, LornContainer};
-        // PlumpyContainer, AcherusContainer, CircularContainer, FilledContainer, KaiContainer, OosContainer, OutlineContainer, PuiContainer, RoundedContainer, SamContainer, VictorContainer};
+        Container = new LinearLayout[]{AuroraContainer, GradiconContainer, LornContainer, PlumpyContainer, AcherusContainer, CircularContainer, FilledContainer, KaiContainer, OosContainer, OutlineContainer, PuiContainer, RoundedContainer, SamContainer, VictorContainer};
 
         // Enable onClick event
         enableOnClickListener(AuroraContainer, Aurora_Enable, Aurora_Disable, AURORA_KEY, 1);
         enableOnClickListener(GradiconContainer, Gradicon_Enable, Gradicon_Disable, GRADICON_KEY, 2);
         enableOnClickListener(LornContainer, Lorn_Enable, Lorn_Disable, LORN_KEY, 3);
-        /*
         enableOnClickListener(PlumpyContainer, Plumpy_Enable, Plumpy_Disable, PLUMPY_KEY, 4);
         enableOnClickListener(AcherusContainer, Acherus_Enable, Acherus_Disable, ACHERUS_KEY, 5);
         enableOnClickListener(CircularContainer, Circular_Enable, Circular_Disable, CIRCULAR_KEY, 6);
@@ -189,7 +180,6 @@ public class en extends AppCompatActivity {
         enableOnClickListener(SamContainer, Sam_Enable, Sam_Disable, SAM_KEY, 13);
         enableOnClickListener(VictorContainer, Victor_Enable, Victor_Disable, VICTOR_KEY, 14);
         enableOnClickListener(AclonicaContainer, Aclonica_Enable, Aclonica_Disable, ACLONICA_KEY, 15);
-        */
 
         refreshBackground();
     }
@@ -213,7 +203,7 @@ public class en extends AppCompatActivity {
                 } else if (linearLayout == LornContainer) {
                     Lorn_Enable.setVisibility(View.GONE);
                     Lorn_Disable.setVisibility(View.GONE);
-                    /*
+                 
                 } else if (linearLayout == PlumpyContainer) {
                     Plumpy_Enable.setVisibility(View.GONE);
                     Plumpy_Disable.setVisibility(View.GONE);
@@ -250,7 +240,7 @@ public class en extends AppCompatActivity {
                 } else if (linearLayout == AclonicaContainer) {
                     Aclonica_Enable.setVisibility(View.GONE);
                     Aclonica_Disable.setVisibility(View.GONE);
-                    */
+                   
                 }
             }
         }
@@ -261,7 +251,7 @@ public class en extends AppCompatActivity {
         checkIfApplied(AuroraContainer, 1);
         checkIfApplied(GradiconContainer, 2);
         checkIfApplied(LornContainer, 3);
-        /*
+        
         checkIfApplied(PlumpyContainer, 4);
         checkIfApplied(AcherusContainer, 5);
         checkIfApplied(CircularContainer, 6);
@@ -274,7 +264,7 @@ public class en extends AppCompatActivity {
         checkIfApplied(SamContainer, 13);
         checkIfApplied(VictorContainer, 14);
         checkIfApplied(AclonicaContainer, 15);
-        */
+        
     }
 
     // Function for onClick events
@@ -368,7 +358,7 @@ public class en extends AppCompatActivity {
         PrefConfig.savePrefBool(Font_Manager.getAppContext(), AURORA_KEY, pack.equals(AURORA_KEY));
         PrefConfig.savePrefBool(Font_Manager.getAppContext(), GRADICON_KEY, pack.equals(GRADICON_KEY));
         PrefConfig.savePrefBool(Font_Manager.getAppContext(), LORN_KEY, pack.equals(LORN_KEY));
-        /*
+        
         PrefConfig.savePrefBool(Font_Manager.getAppContext(), PLUMPY_KEY, pack.equals(PLUMPY_KEY));
         PrefConfig.savePrefBool(Font_Manager.getAppContext(), ACHERUS_KEY, pack.equals(ACHERUS_KEY));
         PrefConfig.savePrefBool(Font_Manager.getAppContext(), CIRCULAR_KEY, pack.equals(CIRCULAR_KEY));
@@ -381,7 +371,7 @@ public class en extends AppCompatActivity {
         PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAM_KEY, pack.equals(SAM_KEY));
         PrefConfig.savePrefBool(Font_Manager.getAppContext(), VICTOR_KEY, pack.equals(VICTOR_KEY));
         PrefConfig.savePrefBool(Font_Manager.getAppContext(), ACLONICA_KEY, pack.equals(ACLONICA_KEY));
-        */
+        
     }
 
     // Function to change applied pack's bg
