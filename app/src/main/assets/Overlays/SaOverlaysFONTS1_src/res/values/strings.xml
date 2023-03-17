@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="config_bodyFontFamily">vagrounded</string>
-    <string name="config_bodyFontFamilyMedium">vagrounded-semi-bold</string>
-    <string name="config_headlineFontFamily">vagrounded</string>
-    <string name="config_headlineFontFamilyMedium">vagrounded-bold</string>
-</resources>

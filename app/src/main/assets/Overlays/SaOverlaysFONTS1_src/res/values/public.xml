@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <public type="string" name="config_bodyFontFamily" id="0x7f020000" />
-    <public type="string" name="config_bodyFontFamilyMedium" id="0x7f020001" />
-    <public type="string" name="config_headlineFontFamily" id="0x7f020002" />
-    <public type="string" name="config_headlineFontFamilyMedium" id="0x7f020003" />
-</resources>
