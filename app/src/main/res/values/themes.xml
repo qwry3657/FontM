@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.Iconify" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.Font_Manager" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Background color. -->
         <item name="android:windowBackground">@color/colorBackground</item>
         <!-- Primary brand color. -->
@@ -47,11 +47,11 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-     <style name="Theme.Iconify.SplashScreen" parent="Theme.SplashScreen">
+     <style name="Theme.Font_Manager.SplashScreen" parent="Theme.SplashScreen">
          <item name="android:windowSplashScreenBackground">@color/colorBackground</item>
          <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
          <item name="android:windowSplashScreenIconBackgroundColor">@color/splash_logo</item>
          <item name="android:windowSplashScreenBrandingImage">@drawable/ic_branding</item>
-         <item name="postSplashScreenTheme">@style/Theme.Iconify</item>
+         <item name="postSplashScreenTheme">@style/Theme.Font_Manager</item>
      </style>
 </resources>
