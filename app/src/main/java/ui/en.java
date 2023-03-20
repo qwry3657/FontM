@@ -456,10 +456,10 @@ public class en extends AppCompatActivity {
     private void addItem(int id, String title, String desc, int enableid, int disableid) {
         View list = LayoutInflater.from(this).inflate(R.layout.list_option_fonts_manager, container, false);
 
-        TextView name = list.findViewById(R.id.list_title_iconpack);
-        TextView info = list.findViewById(R.id.list_desc_iconpack);
-        Button enable = list.findViewById(R.id.list_button_enable_iconpack);
-        Button disable = list.findViewById(R.id.list_button_disable_iconpack);
+        TextView name = list.findViewById(R.id.list_title);
+        TextView info = list.findViewById(R.id.list_desc);
+        Button enable = list.findViewById(R.id.list_button_enable);
+        Button disable = list.findViewById(R.id.list_button_disable);
 
         list.setId(id);
         name.setText(title);

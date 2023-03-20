@@ -29,7 +29,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/list_title_iconpack"
+                android:id="@+id/list_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/textColorPrimary"
@@ -37,7 +37,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/list_desc_iconpack"
+                android:id="@+id/list_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/textColorSecondary"
@@ -48,7 +48,7 @@
     <Button
         app:backgroundTint="@null"
         android:stateListAnimator="@null"
-        android:id="@+id/list_button_enable_iconpack"
+        android:id="@+id/list_button_enable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/container_padding"
@@ -64,7 +64,7 @@
     <Button
         app:backgroundTint="@null"
         android:stateListAnimator="@null"
-        android:id="@+id/list_button_disable_iconpack"
+        android:id="@+id/list_button_disable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/container_padding"
