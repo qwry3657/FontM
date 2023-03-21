@@ -434,7 +434,7 @@ public class en extends AppCompatActivity {
     }
 
     // Function to change applied pack's bg
-    private void checkIfApplied(LinearLayout layout, int icon) {
+    private void checkIfApplied(LinearLayout layout, int font) {
         if (PrefConfig.loadPrefBool(Font_Manager.getAppContext(), "SaOverlaysFONTS" + font + ".overlay")) {
             background(layout.getId(), R.drawable.container_selected);
         } else {
