@@ -41,6 +41,8 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/textColorSecondary"
                 android:textSize="@dimen/cont_title_size2" />
+            </LinearLayout>
+            </LinearLayout>
 
     <Button
         app:backgroundTint="@null"
