@@ -72,28 +72,28 @@ public class en extends AppCompatActivity {
 
         // Icon Pack list items
         container = (ViewGroup) findViewById(R.id.icon_packs_list);
-
+        
         // Font.add items in list
-        addItem(R.id.Sas1_container, "Fucek", "Tap to enable/desable font.", R.id.Sas1_enable, R.id.Sas1_disable);
-        addItem(R.id.Sas2_container, "Nothing", "Tap to enable/desable font.", R.id.Sas2_enable, R.id.Sas2_disable);
-        addItem(R.id.Sas3_container, "Noto Serif", "Tap to enable/desable font.", R.id.Sas3_enable, R.id.Sas3_disable);
-        addItem(R.id.Sas4_container, "Linnote Bold", "Tap to enable/desable font.", R.id.Sas4_enable, R.id.Sas4_disable);
-        addItem(R.id.Sas5_container, "Tinkerbell", "Tap to enable/desable font.", R.id.Sas5_enable, R.id.Sas5_disable);
-        addItem(R.id.Sas6_container, "Sas13sung One", "Tap to enable/desable font.", R.id.Sas6_enable, R.id.Sas6_disable);
-        addItem(R.id.Sas7_container, "Corporativ Sans Sas12", "Tap to enable/desable font.", R.id.Sas7_enable, R.id.Sas7_disable);
-        addItem(R.id.Sas8_container, "FluidSans", "Tap to enable/desable font.", R.id.Sas8_enable, R.id.Sas8_disable);
-        addItem(R.id.Sas9_container, "Dosis", "Tap to enable/desable font.", R.id.Sas9_enable, R.id.Sas9_disable);
-        addItem(R.id.Sas10_container, "Sfpro", "Tap to enable/desable font.", R.id.Sas10_enable, R.id.Sas10_disable);
-        addItem(R.id.Sas11_container, "Opensans", "Tap to enable/desable font.", R.id.Sas11_enable, R.id.Sas11_disable);
-        addItem(R.id.Sas12_container, "Cagliostro", "Tap to enable/desable font.", R.id.Sas12_enable, R.id.Sas12_disable);
-        addItem(R.id.Sas13_container, "Chula", "Tap to enable/desable font.", R.id.Sas13_enable, R.id.Sas13_disable);
-        addItem(R.id.Sas14_container, "Volte-Rounded", "Tap to enable/desable font.", R.id.Sas14_enable, R.id.Sas14_disable);
-        addItem(R.id.Sas15_container, "Arial Rounded", "Tap to enable/desable font.", R.id.Sas15_enable, R.id.Sas15_disable);
-        addItem(R.id.Sas16_container, "Arial Sas12", "Tap to enable/desable font.", R.id.Sas16_enable, R.id.Sas16_disable);
-        addItem(R.id.Sas17_container, "Arial Sas12", "Tap to enable/desable font.", R.id.Sas17_enable, R.id.Sas17_disable);
-        addItem(R.id.Sas18_container, "Arial Sas12", "Tap to enable/desable font.", R.id.Sas18_enable, R.id.Sas18_disable);
-        addItem(R.id.Sas18_container, "Arial Sas12", "Tap to enable/desable font.", R.id.Sas19_enable, R.id.Sas19_disable);
-        addItem(R.id.Sas20_container, "Arial Sas12", "Tap to enable/desable font.", R.id.Sas20_enable, R.id.Sas20_disable);
+        addItem(R.id.sas1_container, "Fucek", "Tap to enable/desable font.", R.id.sas1_enable, R.id.sas1_disable);
+        addItem(R.id.sas2_container, "Nothing", "Tap to enable/desable font.", R.id.sas2_enable, R.id.sas2_disable);
+        addItem(R.id.sas3_container, "Noto Serif", "Tap to enable/desable font.", R.id.sas3_enable, R.id.sas3_disable);
+        addItem(R.id.sas4_container, "Linnote Bold", "Tap to enable/desable font.", R.id.sas4_enable, R.id.sas4_disable);
+        addItem(R.id.sas5_container, "Tinkerbell", "Tap to enable/desable font.", R.id.sas5_enable, R.id.sas5_disable);
+        addItem(R.id.sas6_container, "sas13sung One", "Tap to enable/desable font.", R.id.sas6_enable, R.id.sas6_disable);
+        addItem(R.id.sas7_container, "Corporativ Sans sas12", "Tap to enable/desable font.", R.id.sas7_enable, R.id.sas7_disable);
+        addItem(R.id.sas8_container, "FluidSans", "Tap to enable/desable font.", R.id.sas8_enable, R.id.sas8_disable);
+        addItem(R.id.sas9_container, "Dosis", "Tap to enable/desable font.", R.id.sas9_enable, R.id.sas9_disable);
+        addItem(R.id.sas10_container, "Sfpro", "Tap to enable/desable font.", R.id.sas10_enable, R.id.sas10_disable);
+        addItem(R.id.sas11_container, "Opensans", "Tap to enable/desable font.", R.id.sas11_enable, R.id.sas11_disable);
+        addItem(R.id.sas12_container, "Cagliostro", "Tap to enable/desable font.", R.id.sas12_enable, R.id.sas12_disable);
+        addItem(R.id.sas13_container, "Chula", "Tap to enable/desable font.", R.id.sas13_enable, R.id.sas13_disable);
+        addItem(R.id.sas14_container, "Volte-Rounded", "Tap to enable/desable font.", R.id.sas14_enable, R.id.sas14_disable);
+        addItem(R.id.sas15_container, "Arial Rounded", "Tap to enable/desable font.", R.id.sas15_enable, R.id.sas15_disable);
+        addItem(R.id.sas16_container, "Arial sas12", "Tap to enable/desable font.", R.id.sas16_enable, R.id.sas16_disable);
+        addItem(R.id.sas17_container, "Arial sas12", "Tap to enable/desable font.", R.id.sas17_enable, R.id.sas17_disable);
+        addItem(R.id.sas18_container, "Arial sas12", "Tap to enable/desable font.", R.id.sas18_enable, R.id.sas18_disable);
+        addItem(R.id.sas18_container, "Arial sas12", "Tap to enable/desable font.", R.id.sas19_enable, R.id.sas19_disable);
+        addItem(R.id.sas20_container, "Arial sas12", "Tap to enable/desable font.", R.id.sas20_enable, R.id.sas20_disable);
 
         // Declaration of Sas1
         Sas1Container = findViewById(R.id.Sas1_container);
