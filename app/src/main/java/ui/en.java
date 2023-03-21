@@ -69,96 +69,96 @@ public class en extends AppCompatActivity {
         container = (ViewGroup) findViewById(R.id.icon_packs_list);
 
         // Font.add items in list
-        addItem(R.id.iconPack_aurora_container, "Fucek", "Tap to enable/desable font.", R.id.iconPack_aurora_enable, R.id.iconPack_aurora_disable);
-        addItem(R.id.iconPack_gradicon_container, "Nothing", "Tap to enable/desable font.", R.id.iconPack_gradicon_enable, R.id.iconPack_gradicon_disable);
-        addItem(R.id.iconPack_lorn_container, "Noto Serif", "Tap to enable/desable font.", R.id.iconPack_lorn_enable, R.id.iconPack_lorn_disable);
-        addItem(R.id.iconPack_plumpy_container, "Linnote Bold", "Tap to enable/desable font.", R.id.iconPack_plumpy_enable, R.id.iconPack_plumpy_disable);
-        addItem(R.id.iconPack_acherus_container, "Tinkerbell", "Tap to enable/desable font.", R.id.iconPack_acherus_enable, R.id.iconPack_acherus_disable);
-        addItem(R.id.iconPack_circular_container, "Samsung One", "Tap to enable/desable font.", R.id.iconPack_circular_enable, R.id.iconPack_circular_disable);
-        addItem(R.id.iconPack_filled_container, "Corporativ Sans Rounded", "Tap to enable/desable font.", R.id.iconPack_filled_enable, R.id.iconPack_filled_disable);
-        addItem(R.id.iconPack_kai_container, "FluidSans", "Tap to enable/desable font.", R.id.iconPack_kai_enable, R.id.iconPack_kai_disable);
-        addItem(R.id.iconPack_oos_container, "Dosis", "Tap to enable/desable font.", R.id.iconPack_oos_enable, R.id.iconPack_oos_disable);
-        addItem(R.id.iconPack_outline_container, "Sfpro", "Tap to enable/desable font.", R.id.iconPack_outline_enable, R.id.iconPack_outline_disable);
-        addItem(R.id.iconPack_pui_container, "Opensans", "Tap to enable/desable font.", R.id.iconPack_pui_enable, R.id.iconPack_pui_disable);
-        addItem(R.id.iconPack_rounded_container, "Cagliostro", "Tap to enable/desable font.", R.id.iconPack_rounded_enable, R.id.iconPack_rounded_disable);
-        addItem(R.id.iconPack_sam_container, "Chula", "Tap to enable/desable font.", R.id.iconPack_sam_enable, R.id.iconPack_sam_disable);
-        addItem(R.id.iconPack_victor_container, "Volte-Rounded", "Tap to enable/desable font.", R.id.iconPack_victor_enable, R.id.iconPack_victor_disable);
-        addItem(R.id.iconPack_aclonica_container, "Arial Rounded", "Tap to enable/desable font.", R.id.iconPack_aclonica_enable, R.id.iconPack_aclonica_disable);
+        addItem(R.id.aurora_container, "Fucek", "Tap to enable/desable font.", R.id.aurora_enable, R.id.aurora_disable);
+        addItem(R.id.gradicon_container, "Nothing", "Tap to enable/desable font.", R.id.gradicon_enable, R.id.gradicon_disable);
+        addItem(R.id.lorn_container, "Noto Serif", "Tap to enable/desable font.", R.id.lorn_enable, R.id.lorn_disable);
+        addItem(R.id.plumpy_container, "Linnote Bold", "Tap to enable/desable font.", R.id.plumpy_enable, R.id.plumpy_disable);
+        addItem(R.id.acherus_container, "Tinkerbell", "Tap to enable/desable font.", R.id.acherus_enable, R.id.acherus_disable);
+        addItem(R.id.circular_container, "Samsung One", "Tap to enable/desable font.", R.id.circular_enable, R.id.circular_disable);
+        addItem(R.id.filled_container, "Corporativ Sans Rounded", "Tap to enable/desable font.", R.id.filled_enable, R.id.filled_disable);
+        addItem(R.id.kai_container, "FluidSans", "Tap to enable/desable font.", R.id.kai_enable, R.id.kai_disable);
+        addItem(R.id.oos_container, "Dosis", "Tap to enable/desable font.", R.id.oos_enable, R.id.oos_disable);
+        addItem(R.id.outline_container, "Sfpro", "Tap to enable/desable font.", R.id.outline_enable, R.id.outline_disable);
+        addItem(R.id.pui_container, "Opensans", "Tap to enable/desable font.", R.id.pui_enable, R.id.pui_disable);
+        addItem(R.id.rounded_container, "Cagliostro", "Tap to enable/desable font.", R.id.rounded_enable, R.id.rounded_disable);
+        addItem(R.id.sam_container, "Chula", "Tap to enable/desable font.", R.id.sam_enable, R.id.sam_disable);
+        addItem(R.id.victor_container, "Volte-Rounded", "Tap to enable/desable font.", R.id.victor_enable, R.id.victor_disable);
+        addItem(R.id.aclonica_container, "Arial Rounded", "Tap to enable/desable font.", R.id.aclonica_enable, R.id.aclonica_disable);
 
         // Declaration of Aurora
-        AuroraContainer = findViewById(R.id.iconPack_aurora_container);
-        Aurora_Enable = findViewById(R.id.iconPack_aurora_enable);
-        Aurora_Disable = findViewById(R.id.iconPack_aurora_disable);
+        AuroraContainer = findViewById(R.id.aurora_container);
+        Aurora_Enable = findViewById(R.id.aurora_enable);
+        Aurora_Disable = findViewById(R.id.aurora_disable);
 
         // Declaration of Gradicon
-        GradiconContainer = findViewById(R.id.iconPack_gradicon_container);
-        Gradicon_Enable = findViewById(R.id.iconPack_gradicon_enable);
-        Gradicon_Disable = findViewById(R.id.iconPack_gradicon_disable);
+        GradiconContainer = findViewById(R.id.gradicon_container);
+        Gradicon_Enable = findViewById(R.id.gradicon_enable);
+        Gradicon_Disable = findViewById(R.id.gradicon_disable);
 
         // Declaration of Lorn
-        LornContainer = findViewById(R.id.iconPack_lorn_container);
-        Lorn_Enable = findViewById(R.id.iconPack_lorn_enable);
-        Lorn_Disable = findViewById(R.id.iconPack_lorn_disable);
+        LornContainer = findViewById(R.id.lorn_container);
+        Lorn_Enable = findViewById(R.id.lorn_enable);
+        Lorn_Disable = findViewById(R.id.lorn_disable);
 
         // Declaration of Plumpy
-        PlumpyContainer = findViewById(R.id.iconPack_plumpy_container);
-        Plumpy_Enable = findViewById(R.id.iconPack_plumpy_enable);
-        Plumpy_Disable = findViewById(R.id.iconPack_plumpy_disable);
+        PlumpyContainer = findViewById(R.id.plumpy_container);
+        Plumpy_Enable = findViewById(R.id.plumpy_enable);
+        Plumpy_Disable = findViewById(R.id.plumpy_disable);
 
         // Declaration of Acherus
-        AcherusContainer = findViewById(R.id.iconPack_acherus_container);
-        Acherus_Enable = findViewById(R.id.iconPack_acherus_enable);
-        Acherus_Disable = findViewById(R.id.iconPack_acherus_disable);
+        AcherusContainer = findViewById(R.id.acherus_container);
+        Acherus_Enable = findViewById(R.id.acherus_enable);
+        Acherus_Disable = findViewById(R.id.acherus_disable);
 
         // Declaration of Circular
-        CircularContainer = findViewById(R.id.iconPack_circular_container);
-        Circular_Enable = findViewById(R.id.iconPack_circular_enable);
-        Circular_Disable = findViewById(R.id.iconPack_circular_disable);
+        CircularContainer = findViewById(R.id.circular_container);
+        Circular_Enable = findViewById(R.id.circular_enable);
+        Circular_Disable = findViewById(R.id.circular_disable);
 
         // Declaration of Filled
-        FilledContainer = findViewById(R.id.iconPack_filled_container);
-        Filled_Enable = findViewById(R.id.iconPack_filled_enable);
-        Filled_Disable = findViewById(R.id.iconPack_filled_disable);
+        FilledContainer = findViewById(R.id.filled_container);
+        Filled_Enable = findViewById(R.id.filled_enable);
+        Filled_Disable = findViewById(R.id.filled_disable);
 
         // Declaration of Kai
-        KaiContainer = findViewById(R.id.iconPack_kai_container);
-        Kai_Enable = findViewById(R.id.iconPack_kai_enable);
-        Kai_Disable = findViewById(R.id.iconPack_kai_disable);
+        KaiContainer = findViewById(R.id.kai_container);
+        Kai_Enable = findViewById(R.id.kai_enable);
+        Kai_Disable = findViewById(R.id.kai_disable);
 
         // Declaration of Oos
-        OosContainer = findViewById(R.id.iconPack_oos_container);
-        Oos_Enable = findViewById(R.id.iconPack_oos_enable);
-        Oos_Disable = findViewById(R.id.iconPack_oos_disable);
+        OosContainer = findViewById(R.id.oos_container);
+        Oos_Enable = findViewById(R.id.oos_enable);
+        Oos_Disable = findViewById(R.id.oos_disable);
 
         // Declaration of Outline
-        OutlineContainer = findViewById(R.id.iconPack_outline_container);
-        Outline_Enable = findViewById(R.id.iconPack_outline_enable);
-        Outline_Disable = findViewById(R.id.iconPack_outline_disable);
+        OutlineContainer = findViewById(R.id.outline_container);
+        Outline_Enable = findViewById(R.id.outline_enable);
+        Outline_Disable = findViewById(R.id.outline_disable);
 
         // Declaration of Pui
-        PuiContainer = findViewById(R.id.iconPack_pui_container);
-        Pui_Enable = findViewById(R.id.iconPack_pui_enable);
-        Pui_Disable = findViewById(R.id.iconPack_pui_disable);
+        PuiContainer = findViewById(R.id.pui_container);
+        Pui_Enable = findViewById(R.id.pui_enable);
+        Pui_Disable = findViewById(R.id.pui_disable);
 
         // Declaration of Rounded
-        RoundedContainer = findViewById(R.id.iconPack_rounded_container);
-        Rounded_Enable = findViewById(R.id.iconPack_rounded_enable);
-        Rounded_Disable = findViewById(R.id.iconPack_rounded_disable);
+        RoundedContainer = findViewById(R.id.rounded_container);
+        Rounded_Enable = findViewById(R.id.rounded_enable);
+        Rounded_Disable = findViewById(R.id.rounded_disable);
 
         // Declaration of Sam
-        SamContainer = findViewById(R.id.iconPack_sam_container);
-        Sam_Enable = findViewById(R.id.iconPack_sam_enable);
-        Sam_Disable = findViewById(R.id.iconPack_sam_disable);
+        SamContainer = findViewById(R.id.sam_container);
+        Sam_Enable = findViewById(R.id.sam_enable);
+        Sam_Disable = findViewById(R.id.sam_disable);
 
         // Declaration of Victor
-        VictorContainer = findViewById(R.id.iconPack_victor_container);
-        Victor_Enable = findViewById(R.id.iconPack_victor_enable);
-        Victor_Disable = findViewById(R.id.iconPack_victor_disable);
+        VictorContainer = findViewById(R.id.victor_container);
+        Victor_Enable = findViewById(R.id.victor_enable);
+        Victor_Disable = findViewById(R.id.victor_disable);
         
         // Declaration of Aclonica
-        AclonicaContainer = findViewById(R.id.iconPack_aclonica_container);
-        Aclonica_Enable = findViewById(R.id.iconPack_aclonica_enable);
-        Aclonica_Disable = findViewById(R.id.iconPack_aclonica_disable);
+        AclonicaContainer = findViewById(R.id.aclonica_container);
+        Aclonica_Enable = findViewById(R.id.aclonica_enable);
+        Aclonica_Disable = findViewById(R.id.aclonica_disable);
 
 
         // List of Icon Pack
