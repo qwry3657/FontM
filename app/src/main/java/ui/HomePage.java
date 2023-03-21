@@ -56,7 +56,7 @@ public class HomePage extends AppCompatActivity {
 
         // Home page list items
         container = (ViewGroup) findViewById(R.id.home_page_list);
-        addItem(R.id.home_fontPack1, "English Fonts", "Change your stock font");
+        addItem(R.id.home_fontPack1, "Font Pack 1", "Change your stock font");
         addItem(R.id.home_mediaPlayer, "Media Player", "Change how media player looks");
         // addItem(R.id.home_progressBar, "Progress Bar", "Change progress bar style");
         addItem(R.id.home_info, "About", "Information about this app");

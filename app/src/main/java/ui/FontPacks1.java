@@ -41,10 +41,15 @@ public class FontPacks1 extends AppCompatActivity {
     private static final String sa13_KEY = "SaOverlaysFONTS13.overlay";
     private static final String sa14_KEY = "SaOverlaysFONTS14.overlay";
     private static final String sa15_KEY = "SaOverlaysFONTS15.overlay";
+    private static final String sa16_KEY = "SaOverlaysFONTS16.overlay";
+    private static final String sa17_KEY = "SaOverlaysFONTS17.overlay";
+    private static final String sa18_KEY = "SaOverlaysFONTS18.overlay";
+    private static final String sa19_KEY = "SaOverlaysFONTS19.overlay";
+    private static final String sa20_KEY = "SaOverlaysFONTS20.overlay";
 
     LinearLayout[] Container;
-    LinearLayout sa1Container, sa2Container, sa3Container, sa4Container, sa5Container, sa6Container, sa7Container, sa8Container, sa9Container, sa10Container, sa11Container, sa12Container, sa13Container, sa14Container, sa15Container;
-    Button sa1_Enable, sa1_Disable, sa2_Enable, sa2_Disable, sa3_Enable, sa3_Disable, sa4_Enable, sa4_Disable, sa5_Enable, sa5_Disable, sa6_Enable, sa6_Disable, sa7_Enable, sa7_Disable, sa8_Enable, sa8_Disable, sa9_Enable, sa9_Disable, sa10_Enable, sa10_Disable, sa11_Enable, sa11_Disable, sa12_Enable, sa12_Disable, sa13_Enable, sa13_Disable, sa14_Enable, sa14_Disable, sa15_Enable, sa15_Disable;
+    LinearLayout sa1Container, sa2Container, sa3Container, sa4Container, sa5Container, sa6Container, sa7Container, sa8Container, sa9Container, sa10Container, sa11Container, sa12Container, sa13Container, sa14Container, sa15Container, sa16Container, sa17Container, sa18Container, sa19Container, sa20Container;
+    Button sa1_Enable, sa1_Disable, sa2_Enable, sa2_Disable, sa3_Enable, sa3_Disable, sa4_Enable, sa4_Disable, sa5_Enable, sa5_Disable, sa6_Enable, sa6_Disable, sa7_Enable, sa7_Disable, sa8_Enable, sa8_Disable, sa9_Enable, sa9_Disable, sa10_Enable, sa10_Disable, sa11_Enable, sa11_Disable, sa12_Enable, sa12_Disable, sa13_Enable, sa13_Disable, sa14_Enable, sa14_Disable, sa15_Enable, sa15_Disable, sa16_Enable, sa16_Disable, sa17_Enable, sa17_Disable, sa18_Enable, sa18_Disable, sa19_Enable, sa19_Disable, sa20_Enable, sa20_Disable;
     private ViewGroup container;
     LoadingDialog loadingDialog;
 
@@ -56,7 +61,7 @@ public class FontPacks1 extends AppCompatActivity {
 
         // Header
         CollapsingToolbarLayout collapsing_toolbar = findViewById(R.id.collapsing_toolbar);
-        collapsing_toolbar.setTitle("Fonts Pack");
+        collapsing_toolbar.setTitle("Fonts Pack 1");
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
@@ -84,6 +89,11 @@ public class FontPacks1 extends AppCompatActivity {
         addItem(R.id.sa13_container, "Chula", "Tap to enable/desable font.", R.id.sa13_enable, R.id.sa13_disable);
         addItem(R.id.sa14_container, "Volte-sa12", "Tap to enable/desable font.", R.id.sa14_enable, R.id.sa14_disable);
         addItem(R.id.sa15_container, "Arial sa12", "Tap to enable/desable font.", R.id.sa15_enable, R.id.sa15_disable);
+        addItem(R.id.sa16_container, "Fucek", "Tap to enable/desable font.", R.id.sa16_enable, R.id.sa16_disable);
+        addItem(R.id.sa17_container, "Nothing", "Tap to enable/desable font.", R.id.sa17_enable, R.id.sa17_disable);
+        addItem(R.id.sa18_container, "Noto Serif", "Tap to enable/desable font.", R.id.sa18_enable, R.id.sa18_disable);
+        addItem(R.id.sa19_container, "Linnote Bold", "Tap to enable/desable font.", R.id.sa19_enable, R.id.sa18_disable);
+        addItem(R.id.sa20_container, "Tinkerbell", "Tap to enable/desable font.", R.id.sa20_enable, R.id.sa20_disable);
 
         // Declaration of sa1
         sa1Container = findViewById(R.id.sa1_container);
@@ -159,7 +169,31 @@ public class FontPacks1 extends AppCompatActivity {
         sa15Container = findViewById(R.id.sa15_container);
         sa15_Enable = findViewById(R.id.sa15_enable);
         sa15_Disable = findViewById(R.id.sa15_disable);
+        
+        // Declaration of sa16
+        sa16Container = findViewById(R.id.sa16_container);
+        sa16_Enable = findViewById(R.id.sa16_enable);
+        sa16_Disable = findViewById(R.id.sa16_disable);
+        
+        // Declaration of sa17
+        sa17Container = findViewById(R.id.sa17_container);
+        sa17_Enable = findViewById(R.id.sa17_enable);
+        sa17_Disable = findViewById(R.id.sa17_disable);
 
+        // Declaration of sa18
+        sa18Container = findViewById(R.id.sa18_container);
+        sa18_Enable = findViewById(R.id.sa18_enable);
+        sa18_Disable = findViewById(R.id.sa18_disable);
+        
+        // Declaration of sa19
+        sa19Container = findViewById(R.id.sa19_container);
+        sa19_Enable = findViewById(R.id.sa19_enable);
+        sa19_Disable = findViewById(R.id.sa19_disable);
+        
+        // Declaration of sa20
+        sa20Container = findViewById(R.id.sa20_container);
+        sa20_Enable = findViewById(R.id.sa20_enable);
+        sa20_Disable = findViewById(R.id.sa20_disable);
 
         // List of Icon Pack
         Container = new LinearLayout[]{sa1Container, sa2Container, sa3Container, sa4Container, sa5Container, sa6Container, sa7Container, sa8Container, sa9Container, sa10Container, sa11Container, sa12Container, sa13Container, sa14Container};
@@ -180,6 +214,11 @@ public class FontPacks1 extends AppCompatActivity {
         enableOnClickListener(sa13Container, sa13_Enable, sa13_Disable, sa13_KEY, 13);
         enableOnClickListener(sa14Container, sa14_Enable, sa14_Disable, sa14_KEY, 14);
         enableOnClickListener(sa15Container, sa15_Enable, sa15_Disable, sa15_KEY, 15);
+        enableOnClickListener(sa16Container, sa16_Enable, sa16_Disable, sa16_KEY, 16);
+        enableOnClickListener(sa17Container, sa17_Enable, sa17_Disable, sa17_KEY, 17);
+        enableOnClickListener(sa18Container, sa18_Enable, sa18_Disable, sa18_KEY, 18);
+        enableOnClickListener(sa19Container, sa19_Enable, sa19_Disable, sa19_KEY, 19);
+        enableOnClickListener(sa20Container, sa20_Enable, sa20_Disable, sa20_KEY, 20);
 
         refreshBackground();
     }
@@ -240,6 +279,21 @@ public class FontPacks1 extends AppCompatActivity {
                 } else if (linearLayout == sa15Container) {
                     sa15_Enable.setVisibility(View.GONE);
                     sa15_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa16Container) {
+                    sa16_Enable.setVisibility(View.GONE);
+                    sa16_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa17Container) {
+                    sa17_Enable.setVisibility(View.GONE);
+                    sa17_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa18Container) {
+                    sa18_Enable.setVisibility(View.GONE);
+                    sa18_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa19Container) {
+                    sa19_Enable.setVisibility(View.GONE);
+                    sa19_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa20Container) {
+                    sa20_Enable.setVisibility(View.GONE);
+                    sa20_Disable.setVisibility(View.GONE);
                    
                 }
             }
@@ -264,6 +318,11 @@ public class FontPacks1 extends AppCompatActivity {
         checkIfApplied(sa13Container, 13);
         checkIfApplied(sa14Container, 14);
         checkIfApplied(sa15Container, 15);
+        checkIfApplied(sa16Container, 16);
+        checkIfApplied(sa17Container, 17);
+        checkIfApplied(sa18Container, 18);
+        checkIfApplied(sa19Container, 19);
+        checkIfApplied(sa20Container, 20);
         
     }
 
@@ -370,6 +429,12 @@ public class FontPacks1 extends AppCompatActivity {
         PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa13_KEY, pack.equals(sa13_KEY));
         PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa14_KEY, pack.equals(sa14_KEY));
         PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa15_KEY, pack.equals(sa15_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa16_KEY, pack.equals(sa16_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa17_KEY, pack.equals(sa17_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa18_KEY, pack.equals(sa18_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa19_KEY, pack.equals(sa19_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa20_KEY, pack.equals(sa20_KEY));
+        
         
     }
 
