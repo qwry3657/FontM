@@ -24,7 +24,7 @@ import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import java.util.Objects;
 
-public class Test extends AppCompatActivity {
+public class en extends AppCompatActivity {
 
     private static final String SAS1 = "SaOverlaysFONTS1.overlay";
     private static final String SAS2 = "SaOverlaysFONTS2.overlay";
