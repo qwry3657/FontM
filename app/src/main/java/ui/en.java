@@ -96,29 +96,29 @@ public class en extends AppCompatActivity {
         addItem(R.id.sas20_container, "Arial sas12", "Tap to enable/desable font.", R.id.sas20_enable, R.id.sas20_disable);
 
         // Declaration of sas1
-        sas1Container = findViewById(R.id.sas1_container);
-        sas1_Enable = findViewById(R.id.sas1_enable);
-        sas1_Disable = findViewById(R.id.sas1_disable);
+        Sas1Container = findViewById(R.id.sas1_container);
+        Sas1_Enable = findViewById(R.id.sas1_enable);
+        Sas1_Disable = findViewById(R.id.sas1_disable);
 
         // Declaration of sas2
-        sas2Container = findViewById(R.id.sas2_container);
-        sas2_Enable = findViewById(R.id.sas2_enable);
-        sas2_Disable = findViewById(R.id.sas2_disable);
+        Sas2Container = findViewById(R.id.sas2_container);
+        Sas2_Enable = findViewById(R.id.sas2_enable);
+        Sas2_Disable = findViewById(R.id.sas2_disable);
 
         // Declaration of sas3
-        sas3Container = findViewById(R.id.sas3_container);
-        sas3_Enable = findViewById(R.id.sas3_enable);
-        sas3_Disable = findViewById(R.id.sas3_disable);
+        Sas3Container = findViewById(R.id.sas3_container);
+        Sas3_Enable = findViewById(R.id.sas3_enable);
+        Sas3_Disable = findViewById(R.id.sas3_disable);
 
         // Declaration of sas4
-        sas4Container = findViewById(R.id.sas4_container);
-        sas4_Enable = findViewById(R.id.sas4_enable);
-        sas4_Disable = findViewById(R.id.sas4_disable);
+        Sas4Container = findViewById(R.id.sas4_container);
+        Sas4_Enable = findViewById(R.id.sas4_enable);
+        Sas4_Disable = findViewById(R.id.sas4_disable);
 
         // Declaration of sas5
-        sas5Container = findViewById(R.id.sas5_container);
-        sas5_Enable = findViewById(R.id.sas5_enable);
-        sas5_Disable = findViewById(R.id.sas5_disable);
+        Sas5Container = findViewById(R.id.sas5_container);
+        Sas5_Enable = findViewById(R.id.sas5_enable);
+        Sas5_Disable = findViewById(R.id.sas5_disable);
 
         // Declaration of sas6
         sas6Container = findViewById(R.id.sas6_container);
