@@ -33,7 +33,7 @@ public class Info extends AppCompatActivity {
         
         // Header
         CollapsingToolbarLayout collapsing_toolbar = findViewById(R.id.collapsing_toolbar);
-        collapsing_toolbar.setTitle("ㅤㅤㅤ");
+        collapsing_toolbar.setTitle("🔴🔵🔴");
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
