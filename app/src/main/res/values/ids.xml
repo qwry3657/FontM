@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Home Page List Items -->
-    <item name="home_iconPack" type="id" />
+    <item name="home_fontPack" type="id" />
     <item name="home_mediaPlayer" type="id" />
     <item name="home_progressBar" type="id" />
     <item name="home_info" type="id" />

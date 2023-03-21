@@ -58,7 +58,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".ui.en"
+            android:name=".ui.FontPacks1"
             android:exported="false" />
         <activity
             android:name=".ui.HomePage"

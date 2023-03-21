@@ -56,7 +56,7 @@ public class HomePage extends AppCompatActivity {
 
         // Home page list items
         container = (ViewGroup) findViewById(R.id.home_page_list);
-        addItem(R.id.home_iconPack, "English Fonts", "Change your stock font");
+        addItem(R.id.home_fontPack, "English Fonts", "Change your stock font");
         addItem(R.id.home_mediaPlayer, "Media Player", "Change how media player looks");
         // addItem(R.id.home_progressBar, "Progress Bar", "Change progress bar style");
         addItem(R.id.home_info, "About", "Information about this app");
@@ -100,7 +100,7 @@ public class HomePage extends AppCompatActivity {
         // Icon pack item onClick
         home_iconPack = findViewById(R.id.home_iconPack);
         home_iconPack.setOnClickListener(v -> {
-            Intent intent = new Intent(HomePage.this, en.class);
+            Intent intent = new Intent(HomePage.this, FontPacks1.class);
             startActivity(intent);
         });
         
