@@ -68,6 +68,26 @@
     <item name="sa15_enable" type="id" />
     <item name="sa15_disable" type="id" />
     
+    <item name="sa16_container" type="id" />
+    <item name="sa16_enable" type="id" />
+    <item name="sa16_disable" type="id" />
+    
+    <item name="sa17_container" type="id" />
+    <item name="sa17_enable" type="id" />
+    <item name="sa17_disable" type="id" />
+    
+    <item name="sa18_container" type="id" />
+    <item name="sa18_enable" type="id" />
+    <item name="sa18_disable" type="id" />
+    
+    <item name="sa19_container" type="id" />
+    <item name="sa19_enable" type="id" />
+    <item name="sa19_disable" type="id" />
+    
+    <item name="sa20_container" type="id" />
+    <item name="sa20_enable" type="id" />
+    <item name="sa20_disable" type="id" />
+    
     <!-- Media Player Icon List -->
     <item name="poweramp" type="id" />
     <item name="poweramp_launch" type="id" />
