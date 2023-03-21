@@ -35,7 +35,7 @@ public class HomePage extends AppCompatActivity {
 
     public static boolean isServiceRunning = false;
     private final String TAG = "WelcomePage";
-    LinearLayout home_iconPack, home_mediaPlayer, home_progressBar, home_info;
+    LinearLayout home_fontPack1, home_mediaPlayer, home_progressBar, home_info;
     private ViewGroup container;
 
     @Override
@@ -56,7 +56,7 @@ public class HomePage extends AppCompatActivity {
 
         // Home page list items
         container = (ViewGroup) findViewById(R.id.home_page_list);
-        addItem(R.id.home_fontPack, "English Fonts", "Change your stock font");
+        addItem(R.id.home_fontPack1, "English Fonts", "Change your stock font");
         addItem(R.id.home_mediaPlayer, "Media Player", "Change how media player looks");
         // addItem(R.id.home_progressBar, "Progress Bar", "Change progress bar style");
         addItem(R.id.home_info, "About", "Information about this app");
@@ -98,8 +98,8 @@ public class HomePage extends AppCompatActivity {
         }
 
         // font pack item onClick
-        home_fontPack = findViewById(R.id.home_fontPack);
-        home_fontPack.setOnClickListener(v -> {
+        home_fontPack1 = findViewById(R.id.home_fontPack1);
+        home_fontPack1.setOnClickListener(v -> {
             Intent intent = new Intent(HomePage.this, FontPacks1.class);
             startActivity(intent);
         });
