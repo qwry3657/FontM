@@ -26,26 +26,26 @@ import java.util.Objects;
 
 public class en extends AppCompatActivity {
 
-    private static final String SAS1 = "SaOverlaysFONTS1.overlay";
-    private static final String SAS2 = "SaOverlaysFONTS2.overlay";
-    private static final String SAS3 = "SaOverlaysFONTS3.overlay";
-    private static final String SAS4 = "SaOverlaysFONTS4.overlay";
-    private static final String SAS5 = "SaOverlaysFONTS5.overlay";
-    private static final String SAS6 = "SaOverlaysFONTS6.overlay";
-    private static final String SAS7 = "SaOverlaysFONTS7.overlay";
-    private static final String SAS8 = "SaOverlaysFONTS8.overlay";
-    private static final String SAS9 = "SaOverlaysFONTS9.overlay";
-    private static final String SAS10 = "SaOverlaysFONTS10.overlay";
-    private static final String SAS11 = "SaOverlaysFONTS11.overlay";
-    private static final String SAS12 = "SaOverlaysFONTS12.overlay";
-    private static final String SAS13 = "SaOverlaysFONTS13.overlay";
-    private static final String SAS14 = "SaOverlaysFONTS14.overlay";
-    private static final String SAS15 = "SaOverlaysFONTS15.overlay";
-    private static final String SAS16 = "SaOverlaysFONTS16.overlay";
-    private static final String SAS17 = "SaOverlaysFONTS17.overlay";
-    private static final String SAS18 = "SaOverlaysFONTS18.overlay";
-    private static final String SAS19 = "SaOverlaysFONTS19.overlay";
-    private static final String SAS20 = "SaOverlaysFONTS20.overlay";
+    private static final String SAS1_KEY = "SaOverlaysFONTS1.overlay";
+    private static final String SAS2_KEY = "SaOverlaysFONTS2.overlay";
+    private static final String SAS3_KEY = "SaOverlaysFONTS3.overlay";
+    private static final String SAS4_KEY = "SaOverlaysFONTS4.overlay";
+    private static final String SAS5_KEY = "SaOverlaysFONTS5.overlay";
+    private static final String SAS6_KEY = "SaOverlaysFONTS6.overlay";
+    private static final String SAS7_KEY = "SaOverlaysFONTS7.overlay";
+    private static final String SAS8_KEY = "SaOverlaysFONTS8.overlay";
+    private static final String SAS9_KEY = "SaOverlaysFONTS9.overlay";
+    private static final String SAS10_KEY = "SaOverlaysFONTS10.overlay";
+    private static final String SAS11_KEY = "SaOverlaysFONTS11.overlay";
+    private static final String SAS12_KEY = "SaOverlaysFONTS12.overlay";
+    private static final String SAS13_KEY = "SaOverlaysFONTS13.overlay";
+    private static final String SAS14_KEY = "SaOverlaysFONTS14.overlay";
+    private static final String SAS15_KEY = "SaOverlaysFONTS15.overlay";
+    private static final String SAS16_KEY = "SaOverlaysFONTS16.overlay";
+    private static final String SAS17_KEY = "SaOverlaysFONTS17.overlay";
+    private static final String SAS18_KEY = "SaOverlaysFONTS18.overlay";
+    private static final String SAS19_KEY = "SaOverlaysFONTS19.overlay";
+    private static final String SAS20_KEY = "SaOverlaysFONTS20.overlay";
 
     LinearLayout[] Container;
     LinearLayout Sas1Container, Sas2Container, Sas3Container, Sas4Container, Sas5Container, Sas6Container, Sas7Container, Sas8Container, Sas9Container, Sas10Container, Sas11Container, Sas12Container, Sas13Container, Sas14Container, Sas15Container, Sas16Container, Sas17Container, Sas18Container, Sas19Container, Sas20Container;
@@ -200,26 +200,26 @@ public class en extends AppCompatActivity {
         Container = new LinearLayout[]{Sas1Container, Sas2Container, Sas3Container, Sas4Container, Sas5Container, Sas6Container, Sas7Container, Sas8Container, Sas9Container, Sas10Container, Sas11Container, Sas12Container, Sas13Container, Sas14Container, Sas15Container, Sas16Container, Sas17Container, Sas18Container, Sas19Container, Sas20Container};
 
         // Enable onClick event
-        enableOnClickListener(Sas1Container, Sas1_Enable, Sas1_Disable, SAS1, 1);
-        enableOnClickListener(Sas2Container, Sas2_Enable, Sas2_Disable, SAS2, 2);
-        enableOnClickListener(Sas3Container, Sas3_Enable, Sas3_Disable, SAS3, 3);
-        enableOnClickListener(Sas4Container, Sas4_Enable, Sas4_Disable, SAS4, 4);
-        enableOnClickListener(Sas5Container, Sas5_Enable, Sas5_Disable, SAS5, 5);
-        enableOnClickListener(Sas6Container, Sas6_Enable, Sas6_Disable, SAS6, 6);
-        enableOnClickListener(Sas7Container, Sas7_Enable, Sas7_Disable, SAS7, 7);
-        enableOnClickListener(Sas8Container, Sas8_Enable, Sas8_Disable, SAS8, 8);
-        enableOnClickListener(Sas9Container, Sas9_Enable, Sas9_Disable, SAS9, 9);
-        enableOnClickListener(Sas10Container, Sas10_Enable, Sas10_Disable, SAS10, 10);
-        enableOnClickListener(Sas11Container, Sas11_Enable, Sas11_Disable, SAS11, 11);
-        enableOnClickListener(Sas12Container, Sas12_Enable, Sas12_Disable, SAS12, 12);
-        enableOnClickListener(Sas13Container, Sas13_Enable, Sas13_Disable, SAS13, 13);
-        enableOnClickListener(Sas14Container, Sas14_Enable, Sas14_Disable, SAS14, 14);
-        enableOnClickListener(Sas15Container, Sas15_Enable, Sas15_Disable, SAS15, 15);
-        enableOnClickListener(Sas16Container, Sas16_Enable, Sas16_Disable, SAS16, 16);
-        enableOnClickListener(Sas17Container, Sas17_Enable, Sas17_Disable, SAS17, 17);
-        enableOnClickListener(Sas18Container, Sas18_Enable, Sas18_Disable, SAS18, 18);
-        enableOnClickListener(Sas19Container, Sas19_Enable, Sas19_Disable, SAS19, 19);
-        enableOnClickListener(Sas20Container, Sas20_Enable, Sas20_Disable, SAS20, 20);
+        enableOnClickListener(Sas1Container, Sas1_Enable, Sas1_Disable, SAS1_KEY, 1);
+        enableOnClickListener(Sas2Container, Sas2_Enable, Sas2_Disable, SAS2_KEY, 2);
+        enableOnClickListener(Sas3Container, Sas3_Enable, Sas3_Disable, SAS3_KEY, 3);
+        enableOnClickListener(Sas4Container, Sas4_Enable, Sas4_Disable, SAS4_KEY, 4);
+        enableOnClickListener(Sas5Container, Sas5_Enable, Sas5_Disable, SAS5_KEY, 5);
+        enableOnClickListener(Sas6Container, Sas6_Enable, Sas6_Disable, SAS6_KEY, 6);
+        enableOnClickListener(Sas7Container, Sas7_Enable, Sas7_Disable, SAS7_KEY, 7);
+        enableOnClickListener(Sas8Container, Sas8_Enable, Sas8_Disable, SAS8_KEY, 8);
+        enableOnClickListener(Sas9Container, Sas9_Enable, Sas9_Disable, SAS9_KEY, 9);
+        enableOnClickListener(Sas10Container, Sas10_Enable, Sas10_Disable, SAS10_KEY, 10);
+        enableOnClickListener(Sas11Container, Sas11_Enable, Sas11_Disable, SAS11_KEY, 11);
+        enableOnClickListener(Sas12Container, Sas12_Enable, Sas12_Disable, SAS12_KEY, 12);
+        enableOnClickListener(Sas13Container, Sas13_Enable, Sas13_Disable, SAS13_KEY, 13);
+        enableOnClickListener(Sas14Container, Sas14_Enable, Sas14_Disable, SAS14_KEY, 14);
+        enableOnClickListener(Sas15Container, Sas15_Enable, Sas15_Disable, SAS15_KEY, 15);
+        enableOnClickListener(Sas16Container, Sas16_Enable, Sas16_Disable, SAS16_KEY, 16);
+        enableOnClickListener(Sas17Container, Sas17_Enable, Sas17_Disable, SAS17_KEY, 17);
+        enableOnClickListener(Sas18Container, Sas18_Enable, Sas18_Disable, SAS18_KEY, 18);
+        enableOnClickListener(Sas19Container, Sas19_Enable, Sas19_Disable, SAS19_KEY, 19);
+        enableOnClickListener(Sas20Container, Sas20_Enable, Sas20_Disable, SAS20_KEY, 20);
         
         refreshBackground();
     }
@@ -413,26 +413,26 @@ public class en extends AppCompatActivity {
 
     // Function to disable other packs if one is applied
     private void disable_others(String pack) {
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS1, pack.equals(SAS1));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS2, pack.equals(SAS2));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS3, pack.equals(SAS3));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS4, pack.equals(SAS4));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS5, pack.equals(SAS5));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS6, pack.equals(SAS6));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS7, pack.equals(SAS7));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS8, pack.equals(SAS8));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS9, pack.equals(SAS9));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS10, pack.equals(SAS10));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS11, pack.equals(SAS11));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS12, pack.equals(SAS12));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS13, pack.equals(SAS13));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS14, pack.equals(SAS14));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS15, pack.equals(SAS15));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS16, pack.equals(SAS16));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS17, pack.equals(SAS17));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS18, pack.equals(SAS18));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS19, pack.equals(SAS19));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS20, pack.equals(SAS20));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS1_KEY, pack.equals(SAS1_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS2_KEY, pack.equals(SAS2_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS3_KEY, pack.equals(SAS3_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS4_KEY, pack.equals(SAS4_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS5_KEY, pack.equals(SAS5_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS6_KEY, pack.equals(SAS6_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS7_KEY, pack.equals(SAS7_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS8_KEY, pack.equals(SAS8_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS9_KEY, pack.equals(SAS9_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS10_KEY, pack.equals(SAS10_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS11_KEY, pack.equals(SAS11_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS12_KEY, pack.equals(SAS12_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS13_KEY, pack.equals(SAS13_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS14_KEY, pack.equals(SAS14_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS15_KEY, pack.equals(SAS15_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS16_KEY, pack.equals(SAS16_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS17_KEY, pack.equals(SAS17_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS18_KEY, pack.equals(SAS18_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS19_KEY, pack.equals(SAS19_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAS20_KEY, pack.equals(SAS20_KEY));
         
     }
 
