@@ -121,79 +121,79 @@ public class en extends AppCompatActivity {
         Sas5_Disable = findViewById(R.id.sas5_disable);
 
         // Declaration of sas6
-        sas6Container = findViewById(R.id.sas6_container);
-        sas6_Enable = findViewById(R.id.sas6_enable);
-        sas6_Disable = findViewById(R.id.sas6_disable);
+        Sas6Container = findViewById(R.id.sas6_container);
+        Sas6_Enable = findViewById(R.id.sas6_enable);
+        Sas6_Disable = findViewById(R.id.sas6_disable);
 
         // Declaration of sas7
-        sas7Container = findViewById(R.id.sas7_container);
-        sas7_Enable = findViewById(R.id.sas7_enable);
-        sas7_Disable = findViewById(R.id.sas7_disable);
+        Sas7Container = findViewById(R.id.sas7_container);
+        Sas7_Enable = findViewById(R.id.sas7_enable);
+        Sas7_Disable = findViewById(R.id.sas7_disable);
 
         // Declaration of sas8
-        sas8Container = findViewById(R.id.sas8_container);
-        sas8_Enable = findViewById(R.id.sas8_enable);
-        sas8_Disable = findViewById(R.id.sas8_disable);
+        Sas8Container = findViewById(R.id.sas8_container);
+        Sas8_Enable = findViewById(R.id.sas8_enable);
+        Sas8_Disable = findViewById(R.id.sas8_disable);
 
         // Declaration of sas9
-        sas9Container = findViewById(R.id.sas9_container);
-        sas9_Enable = findViewById(R.id.sas9_enable);
-        sas9_Disable = findViewById(R.id.sas9_disable);
+        Sas9Container = findViewById(R.id.sas9_container);
+        Sas9_Enable = findViewById(R.id.sas9_enable);
+        Sas9_Disable = findViewById(R.id.sas9_disable);
 
         // Declaration of sas10
-        sas10Container = findViewById(R.id.sas10_container);
-        sas10_Enable = findViewById(R.id.sas10_enable);
-        sas10_Disable = findViewById(R.id.sas10_disable);
+        Sas10Container = findViewById(R.id.sas10_container);
+        Sas10_Enable = findViewById(R.id.sas10_enable);
+        Sas10_Disable = findViewById(R.id.sas10_disable);
 
         // Declaration of sas11
-        sas11Container = findViewById(R.id.sas11_container);
-        sas11_Enable = findViewById(R.id.sas11_enable);
-        sas11_Disable = findViewById(R.id.sas11_disable);
+        Sas11Container = findViewById(R.id.sas11_container);
+        Sas11_Enable = findViewById(R.id.sas11_enable);
+        Sas11_Disable = findViewById(R.id.sas11_disable);
 
         // Declaration of sas12
-        sas12Container = findViewById(R.id.sas12_container);
-        sas12_Enable = findViewById(R.id.sas12_enable);
-        sas12_Disable = findViewById(R.id.sas12_disable);
+        Sas12Container = findViewById(R.id.sas12_container);
+        Sas12_Enable = findViewById(R.id.sas12_enable);
+        Sas12_Disable = findViewById(R.id.sas12_disable);
 
         // Declaration of sas13
-        sas13Container = findViewById(R.id.sas13_container);
-        sas13_Enable = findViewById(R.id.sas13_enable);
-        sas13_Disable = findViewById(R.id.sas13_disable);
+        Sas13Container = findViewById(R.id.sas13_container);
+        Sas13_Enable = findViewById(R.id.sas13_enable);
+        Sas13_Disable = findViewById(R.id.sas13_disable);
 
         // Declaration of sas14
-        sas14Container = findViewById(R.id.sas14_container);
-        sas14_Enable = findViewById(R.id.sas14_enable);
-        sas14_Disable = findViewById(R.id.sas14_disable);
+        Sas14Container = findViewById(R.id.sas14_container);
+        Sas14_Enable = findViewById(R.id.sas14_enable);
+        Sas14_Disable = findViewById(R.id.sas14_disable);
         
         // Declaration of sas15
-        sas15Container = findViewById(R.id.sas15_container);
-        sas15_Enable = findViewById(R.id.sas15_enable);
-        sas15_Disable = findViewById(R.id.sas15_disable);
+        Sas15Container = findViewById(R.id.sas15_container);
+        Sas15_Enable = findViewById(R.id.sas15_enable);
+        Sas15_Disable = findViewById(R.id.sas15_disable);
 
         // Declaration of sas16
-        sas16Container = findViewById(R.id.sas16_container);
-        sas16_Enable = findViewById(R.id.sas16_enable);
-        sas16_Disable = findViewById(R.id.sas16_disable);
+        Sas16Container = findViewById(R.id.sas16_container);
+        Sas16_Enable = findViewById(R.id.sas16_enable);
+        Sas16_Disable = findViewById(R.id.sas16_disable);
         
         // Declaration of sas17
-        sas17Container = findViewById(R.id.sas17_container);
-        sas17_Enable = findViewById(R.id.sas17_enable);
-        sas17_Disable = findViewById(R.id.sas17_disable);
+        Sas17Container = findViewById(R.id.sas17_container);
+        Sas17_Enable = findViewById(R.id.sas17_enable);
+        Sas17_Disable = findViewById(R.id.sas17_disable);
 
         // Declaration of sas18
-        sas18Container = findViewById(R.id.sas18_container);
-        sas18_Enable = findViewById(R.id.sas18_enable);
-        sas18_Disable = findViewById(R.id.sas18_disable);
+        Sas18Container = findViewById(R.id.sas18_container);
+        Sas18_Enable = findViewById(R.id.sas18_enable);
+        Sas18_Disable = findViewById(R.id.sas18_disable);
 
         // Declaration of sas19
-        sas19Container = findViewById(R.id.sas19_container);
-        sas19_Enable = findViewById(R.id.sas19_enable);
-        sas19_Disable = findViewById(R.id.sas19_disable);
+        Sas19Container = findViewById(R.id.sas19_container);
+        Sas19_Enable = findViewById(R.id.sas19_enable);
+        Sas19_Disable = findViewById(R.id.sas19_disable);
 
         // Declaration of sas20
-        sas20Container = findViewById(R.id.sas20_container);
-        sas20_Enable = findViewById(R.id.sas20_enable);
-        sas20_Disable = findViewById(R.id.sas20_disable);
+        Sas20Container = findViewById(R.id.sas20_container);
+        Sas20_Enable = findViewById(R.id.sas20_enable);
+        Sas20_Disable = findViewById(R.id.sas20_disable);
 
 
         // List of Icon Pack
