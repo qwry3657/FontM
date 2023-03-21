@@ -98,7 +98,7 @@ public class HomePage extends AppCompatActivity {
         }
 
         // font pack item onClick
-        home_iconPack = findViewById(R.id.home_fontPack);
+        home_fontPack = findViewById(R.id.home_fontPack);
         home_fontPack.setOnClickListener(v -> {
             Intent intent = new Intent(HomePage.this, FontPacks1.class);
             startActivity(intent);
