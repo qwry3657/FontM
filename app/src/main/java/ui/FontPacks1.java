@@ -196,7 +196,7 @@ public class FontPacks1 extends AppCompatActivity {
         sa20_Disable = findViewById(R.id.sa20_disable);
 
         // List of Icon Pack
-        Container = new LinearLayout[]{sa1Container, sa2Container, sa3Container, sa4Container, sa5Container, sa6Container, sa7Container, sa8Container, sa9Container, sa10Container, sa11Container, sa12Container, sa13Container, sa14Containersa16Container, sa17Container, sa18Container, sa19Container, sa20Container};
+        Container = new LinearLayout[]{sa1Container, sa2Container, sa3Container, sa4Container, sa5Container, sa6Container, sa7Container, sa8Container, sa9Container, sa10Container, sa11Container, sa12Container, sa13Container, sa14Container, sa15Container, sa16Container, sa17Container, sa18Container, sa19Container, sa20Container};
 
         // Enable onClick event
         enableOnClickListener(sa1Container, sa1_Enable, sa1_Disable, sa1_KEY, 1);
