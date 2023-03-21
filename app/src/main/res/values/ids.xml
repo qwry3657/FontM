@@ -7,52 +7,66 @@
     <item name="home_info" type="id" />
     <item name="home_bn" type="id" />
     
-    <!-- Icon Pack List -->
-    <item name="aurora_container" type="id" />
-    <item name="aurora_enable" type="id" />
-    <item name="aurora_disable" type="id" />
-    <item name="gradicon_container" type="id" />
-    <item name="gradicon_enable" type="id" />
-    <item name="gradicon_disable" type="id" />
-    <item name="lorn_container" type="id" />
-    <item name="lorn_enable" type="id" />
-    <item name="lorn_disable" type="id" />
-    <item name="plumpy_container" type="id" />
-    <item name="plumpy_enable" type="id" />
-    <item name="plumpy_disable" type="id" />
-    <item name="acherus_container" type="id" />
-    <item name="acherus_enable" type="id" />
-    <item name="acherus_disable" type="id" />
-    <item name="circular_container" type="id" />
-    <item name="circular_enable" type="id" />
-    <item name="circular_disable" type="id" />
-    <item name="filled_container" type="id" />
-    <item name="filled_enable" type="id" />
-    <item name="filled_disable" type="id" />
-    <item name="kai_container" type="id" />
-    <item name="kai_enable" type="id" />
-    <item name="kai_disable" type="id" />
-    <item name="oos_container" type="id" />
-    <item name="oos_enable" type="id" />
-    <item name="oos_disable" type="id" />
-    <item name="outline_container" type="id" />
-    <item name="outline_enable" type="id" />
-    <item name="outline_disable" type="id" />
-    <item name="pui_container" type="id" />
-    <item name="pui_enable" type="id" />
-    <item name="pui_disable" type="id" />
-    <item name="rounded_container" type="id" />
-    <item name="rounded_enable" type="id" />
-    <item name="rounded_disable" type="id" />
-    <item name="sam_container" type="id" />
-    <item name="sam_enable" type="id" />
-    <item name="sam_disable" type="id" />
-    <item name="victor_container" type="id" />
-    <item name="victor_enable" type="id" />
-    <item name="victor_disable" type="id" />
-    <item name="aclonica_container" type="id" />
-    <item name="aclonica_enable" type="id" />
-    <item name="aclonica_disable" type="id" />
+        <!-- Icon Pack List -->
+    <item name="sa1_container" type="id" />
+    <item name="sa1_enable" type="id" />
+    <item name="sa1_disable" type="id" />
+    
+    <item name="sa2_container" type="id" />
+    <item name="sa2_enable" type="id" />
+    <item name="sa2_disable" type="id" />
+    
+    <item name="sa3_container" type="id" />
+    <item name="sa3_enable" type="id" />
+    <item name="sa3_disable" type="id" />
+    
+    <item name="sa4_container" type="id" />
+    <item name="sa4_enable" type="id" />
+    <item name="sa4_disable" type="id" />
+    
+    <item name="sa5_container" type="id" />
+    <item name="sa5_enable" type="id" />
+    <item name="sa5_disable" type="id" />
+    
+    <item name="sa6_container" type="id" />
+    <item name="sa6_enable" type="id" />
+    <item name="sa6_disable" type="id" />
+    
+    <item name="sa7_container" type="id" />
+    <item name="sa7_enable" type="id" />
+    <item name="sa7_disable" type="id" />
+    
+    <item name="sa8_container" type="id" />
+    <item name="sa8_enable" type="id" />
+    <item name="sa8_disable" type="id" />
+    
+    <item name="sa9_container" type="id" />
+    <item name="sa9_enable" type="id" />
+    <item name="sa9_disable" type="id" />
+    
+    <item name="sa10_container" type="id" />
+    <item name="sa10_enable" type="id" />
+    <item name="sa10_disable" type="id" />
+    
+    <item name="sa11_container" type="id" />
+    <item name="sa11_enable" type="id" />
+    <item name="sa11_disable" type="id" />
+    
+    <item name="sa12_container" type="id" />
+    <item name="sa12_enable" type="id" />
+    <item name="sa12_disable" type="id" />
+    
+    <item name="sa13_container" type="id" />
+    <item name="sa13_enable" type="id" />
+    <item name="sa13_disable" type="id" />
+    
+    <item name="sa14_container" type="id" />
+    <item name="sa14_enable" type="id" />
+    <item name="sa14_disable" type="id" />
+    
+    <item name="sa15_container" type="id" />
+    <item name="sa15_enable" type="id" />
+    <item name="sa15_disable" type="id" />
     
     <!-- Media Player Icon List -->
     <item name="poweramp" type="id" />

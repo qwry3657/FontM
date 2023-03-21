@@ -26,25 +26,25 @@ import java.util.Objects;
 
 public class en extends AppCompatActivity {
 
-    private static final String AURORA_KEY = "SaOverlaysFONTS1.overlay";
-    private static final String GRADICON_KEY = "SaOverlaysFONTS2.overlay";
-    private static final String LORN_KEY = "SaOverlaysFONTS3.overlay";
-    private static final String PLUMPY_KEY = "SaOverlaysFONTS4.overlay";
-    private static final String ACHERUS_KEY = "SaOverlaysFONTS5.overlay";
-    private static final String CIRCULAR_KEY = "SaOverlaysFONTS6.overlay";
-    private static final String FILLED_KEY = "SaOverlaysFONTS7.overlay";
-    private static final String KAI_KEY = "SaOverlaysFONTS8.overlay";
-    private static final String OOS_KEY = "SaOverlaysFONTS9.overlay";
-    private static final String OUTLINE_KEY = "SaOverlaysFONTS10.overlay";
-    private static final String PUI_KEY = "SaOverlaysFONTS11.overlay";
-    private static final String ROUNDED_KEY = "SaOverlaysFONTS12.overlay";
-    private static final String SAM_KEY = "SaOverlaysFONTS13.overlay";
-    private static final String VICTOR_KEY = "SaOverlaysFONTS14.overlay";
-    private static final String ACLONICA_KEY = "SaOverlaysFONTS15.overlay";
+    private static final String sa1_KEY = "SaOverlaysFONTS1.overlay";
+    private static final String sa2_KEY = "SaOverlaysFONTS2.overlay";
+    private static final String sa3_KEY = "SaOverlaysFONTS3.overlay";
+    private static final String sa4_KEY = "SaOverlaysFONTS4.overlay";
+    private static final String sa5_KEY = "SaOverlaysFONTS5.overlay";
+    private static final String sa6_KEY = "SaOverlaysFONTS6.overlay";
+    private static final String sa7_KEY = "SaOverlaysFONTS7.overlay";
+    private static final String sa8_KEY = "SaOverlaysFONTS8.overlay";
+    private static final String sa9_KEY = "SaOverlaysFONTS9.overlay";
+    private static final String sa10_KEY = "SaOverlaysFONTS10.overlay";
+    private static final String sa11_KEY = "SaOverlaysFONTS11.overlay";
+    private static final String sa12_KEY = "SaOverlaysFONTS12.overlay";
+    private static final String sa13_KEY = "SaOverlaysFONTS13.overlay";
+    private static final String sa14_KEY = "SaOverlaysFONTS14.overlay";
+    private static final String sa15_KEY = "SaOverlaysFONTS15.overlay";
 
     LinearLayout[] Container;
-    LinearLayout AuroraContainer, GradiconContainer, LornContainer, PlumpyContainer, AcherusContainer, CircularContainer, FilledContainer, KaiContainer, OosContainer, OutlineContainer, PuiContainer, RoundedContainer, SamContainer, VictorContainer, AclonicaContainer;
-    Button Aurora_Enable, Aurora_Disable, Gradicon_Enable, Gradicon_Disable, Lorn_Enable, Lorn_Disable, Plumpy_Enable, Plumpy_Disable, Acherus_Enable, Acherus_Disable, Circular_Enable, Circular_Disable, Filled_Enable, Filled_Disable, Kai_Enable, Kai_Disable, Oos_Enable, Oos_Disable, Outline_Enable, Outline_Disable, Pui_Enable, Pui_Disable, Rounded_Enable, Rounded_Disable, Sam_Enable, Sam_Disable, Victor_Enable, Victor_Disable, Aclonica_Enable, Aclonica_Disable;
+    LinearLayout sa1Container, sa2Container, sa3Container, sa4Container, sa5Container, sa6Container, sa7Container, sa8Container, sa9Container, sa10Container, sa11Container, sa12Container, sa13Container, sa14Container, sa15Container;
+    Button sa1_Enable, sa1_Disable, sa2_Enable, sa2_Disable, sa3_Enable, sa3_Disable, sa4_Enable, sa4_Disable, sa5_Enable, sa5_Disable, sa6_Enable, sa6_Disable, sa7_Enable, sa7_Disable, sa8_Enable, sa8_Disable, sa9_Enable, sa9_Disable, sa10_Enable, sa10_Disable, sa11_Enable, sa11_Disable, sa12_Enable, sa12_Disable, sa13_Enable, sa13_Disable, sa14_Enable, sa14_Disable, sa15_Enable, sa15_Disable;
     private ViewGroup container;
     LoadingDialog loadingDialog;
 
@@ -69,117 +69,117 @@ public class en extends AppCompatActivity {
         container = (ViewGroup) findViewById(R.id.icon_packs_list);
 
         // Font.add items in list
-        addItem(R.id.aurora_container, "Fucek", "Tap to enable/desable font.", R.id.aurora_enable, R.id.aurora_disable);
-        addItem(R.id.gradicon_container, "Nothing", "Tap to enable/desable font.", R.id.gradicon_enable, R.id.gradicon_disable);
-        addItem(R.id.lorn_container, "Noto Serif", "Tap to enable/desable font.", R.id.lorn_enable, R.id.lorn_disable);
-        addItem(R.id.plumpy_container, "Linnote Bold", "Tap to enable/desable font.", R.id.plumpy_enable, R.id.plumpy_disable);
-        addItem(R.id.acherus_container, "Tinkerbell", "Tap to enable/desable font.", R.id.acherus_enable, R.id.acherus_disable);
-        addItem(R.id.circular_container, "Samsung One", "Tap to enable/desable font.", R.id.circular_enable, R.id.circular_disable);
-        addItem(R.id.filled_container, "Corporativ Sans Rounded", "Tap to enable/desable font.", R.id.filled_enable, R.id.filled_disable);
-        addItem(R.id.kai_container, "FluidSans", "Tap to enable/desable font.", R.id.kai_enable, R.id.kai_disable);
-        addItem(R.id.oos_container, "Dosis", "Tap to enable/desable font.", R.id.oos_enable, R.id.oos_disable);
-        addItem(R.id.outline_container, "Sfpro", "Tap to enable/desable font.", R.id.outline_enable, R.id.outline_disable);
-        addItem(R.id.pui_container, "Opensans", "Tap to enable/desable font.", R.id.pui_enable, R.id.pui_disable);
-        addItem(R.id.rounded_container, "Cagliostro", "Tap to enable/desable font.", R.id.rounded_enable, R.id.rounded_disable);
-        addItem(R.id.sam_container, "Chula", "Tap to enable/desable font.", R.id.sam_enable, R.id.sam_disable);
-        addItem(R.id.victor_container, "Volte-Rounded", "Tap to enable/desable font.", R.id.victor_enable, R.id.victor_disable);
-        addItem(R.id.aclonica_container, "Arial Rounded", "Tap to enable/desable font.", R.id.aclonica_enable, R.id.aclonica_disable);
+        addItem(R.id.sa1_container, "Fucek", "Tap to enable/desable font.", R.id.sa1_enable, R.id.sa1_disable);
+        addItem(R.id.sa2_container, "Nothing", "Tap to enable/desable font.", R.id.sa2_enable, R.id.sa2_disable);
+        addItem(R.id.sa3_container, "Noto Serif", "Tap to enable/desable font.", R.id.sa3_enable, R.id.sa3_disable);
+        addItem(R.id.sa4_container, "Linnote Bold", "Tap to enable/desable font.", R.id.sa4_enable, R.id.sa4_disable);
+        addItem(R.id.sa5_container, "Tinkerbell", "Tap to enable/desable font.", R.id.sa5_enable, R.id.sa5_disable);
+        addItem(R.id.sa6_container, "sa13sung One", "Tap to enable/desable font.", R.id.sa6_enable, R.id.sa6_disable);
+        addItem(R.id.sa7_container, "Corporativ Sans sa12", "Tap to enable/desable font.", R.id.sa7_enable, R.id.sa7_disable);
+        addItem(R.id.sa8_container, "FluidSans", "Tap to enable/desable font.", R.id.sa8_enable, R.id.sa8_disable);
+        addItem(R.id.sa9_container, "Dosis", "Tap to enable/desable font.", R.id.sa9_enable, R.id.sa9_disable);
+        addItem(R.id.sa10_container, "Sfpro", "Tap to enable/desable font.", R.id.sa10_enable, R.id.sa10_disable);
+        addItem(R.id.sa11_container, "Opensans", "Tap to enable/desable font.", R.id.sa11_enable, R.id.sa11_disable);
+        addItem(R.id.sa12_container, "Cagliostro", "Tap to enable/desable font.", R.id.sa12_enable, R.id.sa12_disable);
+        addItem(R.id.sa13_container, "Chula", "Tap to enable/desable font.", R.id.sa13_enable, R.id.sa13_disable);
+        addItem(R.id.sa14_container, "Volte-sa12", "Tap to enable/desable font.", R.id.sa14_enable, R.id.sa14_disable);
+        addItem(R.id.sa15_container, "Arial sa12", "Tap to enable/desable font.", R.id.sa15_enable, R.id.sa15_disable);
 
-        // Declaration of Aurora
-        AuroraContainer = findViewById(R.id.aurora_container);
-        Aurora_Enable = findViewById(R.id.aurora_enable);
-        Aurora_Disable = findViewById(R.id.aurora_disable);
+        // Declaration of sa1
+        sa1Container = findViewById(R.id.sa1_container);
+        sa1_Enable = findViewById(R.id.sa1_enable);
+        sa1_Disable = findViewById(R.id.sa1_disable);
 
-        // Declaration of Gradicon
-        GradiconContainer = findViewById(R.id.gradicon_container);
-        Gradicon_Enable = findViewById(R.id.gradicon_enable);
-        Gradicon_Disable = findViewById(R.id.gradicon_disable);
+        // Declaration of sa2
+        sa2Container = findViewById(R.id.sa2_container);
+        sa2_Enable = findViewById(R.id.sa2_enable);
+        sa2_Disable = findViewById(R.id.sa2_disable);
 
-        // Declaration of Lorn
-        LornContainer = findViewById(R.id.lorn_container);
-        Lorn_Enable = findViewById(R.id.lorn_enable);
-        Lorn_Disable = findViewById(R.id.lorn_disable);
+        // Declaration of sa3
+        sa3Container = findViewById(R.id.sa3_container);
+        sa3_Enable = findViewById(R.id.sa3_enable);
+        sa3_Disable = findViewById(R.id.sa3_disable);
 
-        // Declaration of Plumpy
-        PlumpyContainer = findViewById(R.id.plumpy_container);
-        Plumpy_Enable = findViewById(R.id.plumpy_enable);
-        Plumpy_Disable = findViewById(R.id.plumpy_disable);
+        // Declaration of sa4
+        sa4Container = findViewById(R.id.sa4_container);
+        sa4_Enable = findViewById(R.id.sa4_enable);
+        sa4_Disable = findViewById(R.id.sa4_disable);
 
-        // Declaration of Acherus
-        AcherusContainer = findViewById(R.id.acherus_container);
-        Acherus_Enable = findViewById(R.id.acherus_enable);
-        Acherus_Disable = findViewById(R.id.acherus_disable);
+        // Declaration of sa5
+        sa5Container = findViewById(R.id.sa5_container);
+        sa5_Enable = findViewById(R.id.sa5_enable);
+        sa5_Disable = findViewById(R.id.sa5_disable);
 
-        // Declaration of Circular
-        CircularContainer = findViewById(R.id.circular_container);
-        Circular_Enable = findViewById(R.id.circular_enable);
-        Circular_Disable = findViewById(R.id.circular_disable);
+        // Declaration of sa6
+        sa6Container = findViewById(R.id.sa6_container);
+        sa6_Enable = findViewById(R.id.sa6_enable);
+        sa6_Disable = findViewById(R.id.sa6_disable);
 
-        // Declaration of Filled
-        FilledContainer = findViewById(R.id.filled_container);
-        Filled_Enable = findViewById(R.id.filled_enable);
-        Filled_Disable = findViewById(R.id.filled_disable);
+        // Declaration of sa7
+        sa7Container = findViewById(R.id.sa7_container);
+        sa7_Enable = findViewById(R.id.sa7_enable);
+        sa7_Disable = findViewById(R.id.sa7_disable);
 
-        // Declaration of Kai
-        KaiContainer = findViewById(R.id.kai_container);
-        Kai_Enable = findViewById(R.id.kai_enable);
-        Kai_Disable = findViewById(R.id.kai_disable);
+        // Declaration of sa8
+        sa8Container = findViewById(R.id.sa8_container);
+        sa8_Enable = findViewById(R.id.sa8_enable);
+        sa8_Disable = findViewById(R.id.sa8_disable);
 
-        // Declaration of Oos
-        OosContainer = findViewById(R.id.oos_container);
-        Oos_Enable = findViewById(R.id.oos_enable);
-        Oos_Disable = findViewById(R.id.oos_disable);
+        // Declaration of sa9
+        sa9Container = findViewById(R.id.sa9_container);
+        sa9_Enable = findViewById(R.id.sa9_enable);
+        sa9_Disable = findViewById(R.id.sa9_disable);
 
-        // Declaration of Outline
-        OutlineContainer = findViewById(R.id.outline_container);
-        Outline_Enable = findViewById(R.id.outline_enable);
-        Outline_Disable = findViewById(R.id.outline_disable);
+        // Declaration of sa10
+        sa10Container = findViewById(R.id.sa10_container);
+        sa10_Enable = findViewById(R.id.sa10_enable);
+        sa10_Disable = findViewById(R.id.sa10_disable);
 
-        // Declaration of Pui
-        PuiContainer = findViewById(R.id.pui_container);
-        Pui_Enable = findViewById(R.id.pui_enable);
-        Pui_Disable = findViewById(R.id.pui_disable);
+        // Declaration of sa11
+        sa11Container = findViewById(R.id.sa11_container);
+        sa11_Enable = findViewById(R.id.sa11_enable);
+        sa11_Disable = findViewById(R.id.sa11_disable);
 
-        // Declaration of Rounded
-        RoundedContainer = findViewById(R.id.rounded_container);
-        Rounded_Enable = findViewById(R.id.rounded_enable);
-        Rounded_Disable = findViewById(R.id.rounded_disable);
+        // Declaration of sa12
+        sa12Container = findViewById(R.id.sa12_container);
+        sa12_Enable = findViewById(R.id.sa12_enable);
+        sa12_Disable = findViewById(R.id.sa12_disable);
 
-        // Declaration of Sam
-        SamContainer = findViewById(R.id.sam_container);
-        Sam_Enable = findViewById(R.id.sam_enable);
-        Sam_Disable = findViewById(R.id.sam_disable);
+        // Declaration of sa13
+        sa13Container = findViewById(R.id.sa13_container);
+        sa13_Enable = findViewById(R.id.sa13_enable);
+        sa13_Disable = findViewById(R.id.sa13_disable);
 
-        // Declaration of Victor
-        VictorContainer = findViewById(R.id.victor_container);
-        Victor_Enable = findViewById(R.id.victor_enable);
-        Victor_Disable = findViewById(R.id.victor_disable);
+        // Declaration of sa14
+        sa14Container = findViewById(R.id.sa14_container);
+        sa14_Enable = findViewById(R.id.sa14_enable);
+        sa14_Disable = findViewById(R.id.sa14_disable);
         
-        // Declaration of Aclonica
-        AclonicaContainer = findViewById(R.id.aclonica_container);
-        Aclonica_Enable = findViewById(R.id.aclonica_enable);
-        Aclonica_Disable = findViewById(R.id.aclonica_disable);
+        // Declaration of sa15
+        sa15Container = findViewById(R.id.sa15_container);
+        sa15_Enable = findViewById(R.id.sa15_enable);
+        sa15_Disable = findViewById(R.id.sa15_disable);
 
 
         // List of Icon Pack
-        Container = new LinearLayout[]{AuroraContainer, GradiconContainer, LornContainer, PlumpyContainer, AcherusContainer, CircularContainer, FilledContainer, KaiContainer, OosContainer, OutlineContainer, PuiContainer, RoundedContainer, SamContainer, VictorContainer};
+        Container = new LinearLayout[]{sa1Container, sa2Container, sa3Container, sa4Container, sa5Container, sa6Container, sa7Container, sa8Container, sa9Container, sa10Container, sa11Container, sa12Container, sa13Container, sa14Container};
 
         // Enable onClick event
-        enableOnClickListener(AuroraContainer, Aurora_Enable, Aurora_Disable, AURORA_KEY, 1);
-        enableOnClickListener(GradiconContainer, Gradicon_Enable, Gradicon_Disable, GRADICON_KEY, 2);
-        enableOnClickListener(LornContainer, Lorn_Enable, Lorn_Disable, LORN_KEY, 3);
-        enableOnClickListener(PlumpyContainer, Plumpy_Enable, Plumpy_Disable, PLUMPY_KEY, 4);
-        enableOnClickListener(AcherusContainer, Acherus_Enable, Acherus_Disable, ACHERUS_KEY, 5);
-        enableOnClickListener(CircularContainer, Circular_Enable, Circular_Disable, CIRCULAR_KEY, 6);
-        enableOnClickListener(FilledContainer, Filled_Enable, Filled_Disable, FILLED_KEY, 7);
-        enableOnClickListener(KaiContainer, Kai_Enable, Kai_Disable, KAI_KEY, 8);
-        enableOnClickListener(OosContainer, Oos_Enable, Oos_Disable, OOS_KEY, 9);
-        enableOnClickListener(OutlineContainer, Outline_Enable, Outline_Disable, OUTLINE_KEY, 10);
-        enableOnClickListener(PuiContainer, Pui_Enable, Pui_Disable, PUI_KEY, 11);
-        enableOnClickListener(RoundedContainer, Rounded_Enable, Rounded_Disable, ROUNDED_KEY, 12);
-        enableOnClickListener(SamContainer, Sam_Enable, Sam_Disable, SAM_KEY, 13);
-        enableOnClickListener(VictorContainer, Victor_Enable, Victor_Disable, VICTOR_KEY, 14);
-        enableOnClickListener(AclonicaContainer, Aclonica_Enable, Aclonica_Disable, ACLONICA_KEY, 15);
+        enableOnClickListener(sa1Container, sa1_Enable, sa1_Disable, sa1_KEY, 1);
+        enableOnClickListener(sa2Container, sa2_Enable, sa2_Disable, sa2_KEY, 2);
+        enableOnClickListener(sa3Container, sa3_Enable, sa3_Disable, sa3_KEY, 3);
+        enableOnClickListener(sa4Container, sa4_Enable, sa4_Disable, sa4_KEY, 4);
+        enableOnClickListener(sa5Container, sa5_Enable, sa5_Disable, sa5_KEY, 5);
+        enableOnClickListener(sa6Container, sa6_Enable, sa6_Disable, sa6_KEY, 6);
+        enableOnClickListener(sa7Container, sa7_Enable, sa7_Disable, sa7_KEY, 7);
+        enableOnClickListener(sa8Container, sa8_Enable, sa8_Disable, sa8_KEY, 8);
+        enableOnClickListener(sa9Container, sa9_Enable, sa9_Disable, sa9_KEY, 9);
+        enableOnClickListener(sa10Container, sa10_Enable, sa10_Disable, sa10_KEY, 10);
+        enableOnClickListener(sa11Container, sa11_Enable, sa11_Disable, sa11_KEY, 11);
+        enableOnClickListener(sa12Container, sa12_Enable, sa12_Disable, sa12_KEY, 12);
+        enableOnClickListener(sa13Container, sa13_Enable, sa13_Disable, sa13_KEY, 13);
+        enableOnClickListener(sa14Container, sa14_Enable, sa14_Disable, sa14_KEY, 14);
+        enableOnClickListener(sa15Container, sa15_Enable, sa15_Disable, sa15_KEY, 15);
 
         refreshBackground();
     }
@@ -194,52 +194,52 @@ public class en extends AppCompatActivity {
     private void refreshLayout(LinearLayout layout) {
         for (LinearLayout linearLayout : Container) {
             if (!(linearLayout == layout)) {
-                if (linearLayout == AuroraContainer) {
-                    Aurora_Enable.setVisibility(View.GONE);
-                    Aurora_Disable.setVisibility(View.GONE);
-                } else if (linearLayout == GradiconContainer) {
-                    Gradicon_Enable.setVisibility(View.GONE);
-                    Gradicon_Disable.setVisibility(View.GONE);
-                } else if (linearLayout == LornContainer) {
-                    Lorn_Enable.setVisibility(View.GONE);
-                    Lorn_Disable.setVisibility(View.GONE);
+                if (linearLayout == sa1Container) {
+                    sa1_Enable.setVisibility(View.GONE);
+                    sa1_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa2Container) {
+                    sa2_Enable.setVisibility(View.GONE);
+                    sa2_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa3Container) {
+                    sa3_Enable.setVisibility(View.GONE);
+                    sa3_Disable.setVisibility(View.GONE);
                  
-                } else if (linearLayout == PlumpyContainer) {
-                    Plumpy_Enable.setVisibility(View.GONE);
-                    Plumpy_Disable.setVisibility(View.GONE);
-                } else if (linearLayout == AcherusContainer) {
-                    Acherus_Enable.setVisibility(View.GONE);
-                    Acherus_Disable.setVisibility(View.GONE);
-                } else if (linearLayout == CircularContainer) {
-                    Circular_Enable.setVisibility(View.GONE);
-                    Circular_Disable.setVisibility(View.GONE);
-                } else if (linearLayout == FilledContainer) {
-                    Filled_Enable.setVisibility(View.GONE);
-                    Filled_Disable.setVisibility(View.GONE);
-                } else if (linearLayout == KaiContainer) {
-                    Kai_Enable.setVisibility(View.GONE);
-                    Kai_Disable.setVisibility(View.GONE);
-                } else if (linearLayout == OosContainer) {
-                    Oos_Enable.setVisibility(View.GONE);
-                    Oos_Disable.setVisibility(View.GONE);
-                } else if (linearLayout == OutlineContainer) {
-                    Outline_Enable.setVisibility(View.GONE);
-                    Outline_Disable.setVisibility(View.GONE);
-                } else if (linearLayout == PuiContainer) {
-                    Pui_Enable.setVisibility(View.GONE);
-                    Pui_Disable.setVisibility(View.GONE);
-                } else if (linearLayout == RoundedContainer) {
-                    Rounded_Enable.setVisibility(View.GONE);
-                    Rounded_Disable.setVisibility(View.GONE);
-                } else if (linearLayout == SamContainer) {
-                    Sam_Enable.setVisibility(View.GONE);
-                    Sam_Disable.setVisibility(View.GONE);
-                } else if (linearLayout == VictorContainer) {
-                    Victor_Enable.setVisibility(View.GONE);
-                    Victor_Disable.setVisibility(View.GONE);
-                } else if (linearLayout == AclonicaContainer) {
-                    Aclonica_Enable.setVisibility(View.GONE);
-                    Aclonica_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa4Container) {
+                    sa4_Enable.setVisibility(View.GONE);
+                    sa4_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa5Container) {
+                    sa5_Enable.setVisibility(View.GONE);
+                    sa5_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa6Container) {
+                    sa6_Enable.setVisibility(View.GONE);
+                    sa6_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa7Container) {
+                    sa7_Enable.setVisibility(View.GONE);
+                    sa7_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa8Container) {
+                    sa8_Enable.setVisibility(View.GONE);
+                    sa8_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa9Container) {
+                    sa9_Enable.setVisibility(View.GONE);
+                    sa9_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa10Container) {
+                    sa10_Enable.setVisibility(View.GONE);
+                    sa10_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa11Container) {
+                    sa11_Enable.setVisibility(View.GONE);
+                    sa11_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa12Container) {
+                    sa12_Enable.setVisibility(View.GONE);
+                    sa12_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa13Container) {
+                    sa13_Enable.setVisibility(View.GONE);
+                    sa13_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa14Container) {
+                    sa14_Enable.setVisibility(View.GONE);
+                    sa14_Disable.setVisibility(View.GONE);
+                } else if (linearLayout == sa15Container) {
+                    sa15_Enable.setVisibility(View.GONE);
+                    sa15_Disable.setVisibility(View.GONE);
                    
                 }
             }
@@ -248,22 +248,22 @@ public class en extends AppCompatActivity {
 
     // Function to check for bg drawable changes
     private void refreshBackground() {
-        checkIfApplied(AuroraContainer, 1);
-        checkIfApplied(GradiconContainer, 2);
-        checkIfApplied(LornContainer, 3);
+        checkIfApplied(sa1Container, 1);
+        checkIfApplied(sa2Container, 2);
+        checkIfApplied(sa3Container, 3);
         
-        checkIfApplied(PlumpyContainer, 4);
-        checkIfApplied(AcherusContainer, 5);
-        checkIfApplied(CircularContainer, 6);
-        checkIfApplied(FilledContainer, 7);
-        checkIfApplied(KaiContainer, 8);
-        checkIfApplied(OosContainer, 9);
-        checkIfApplied(OutlineContainer, 10);
-        checkIfApplied(PuiContainer, 11);
-        checkIfApplied(RoundedContainer, 12);
-        checkIfApplied(SamContainer, 13);
-        checkIfApplied(VictorContainer, 14);
-        checkIfApplied(AclonicaContainer, 15);
+        checkIfApplied(sa4Container, 4);
+        checkIfApplied(sa5Container, 5);
+        checkIfApplied(sa6Container, 6);
+        checkIfApplied(sa7Container, 7);
+        checkIfApplied(sa8Container, 8);
+        checkIfApplied(sa9Container, 9);
+        checkIfApplied(sa10Container, 10);
+        checkIfApplied(sa11Container, 11);
+        checkIfApplied(sa12Container, 12);
+        checkIfApplied(sa13Container, 13);
+        checkIfApplied(sa14Container, 14);
+        checkIfApplied(sa15Container, 15);
         
     }
 
@@ -355,22 +355,21 @@ public class en extends AppCompatActivity {
 
     // Function to disable other packs if one is applied
     private void disable_others(String pack) {
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), AURORA_KEY, pack.equals(AURORA_KEY));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), GRADICON_KEY, pack.equals(GRADICON_KEY));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), LORN_KEY, pack.equals(LORN_KEY));
-        
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), PLUMPY_KEY, pack.equals(PLUMPY_KEY));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), ACHERUS_KEY, pack.equals(ACHERUS_KEY));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), CIRCULAR_KEY, pack.equals(CIRCULAR_KEY));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), FILLED_KEY, pack.equals(FILLED_KEY));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), KAI_KEY, pack.equals(KAI_KEY));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), OOS_KEY, pack.equals(OOS_KEY));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), OUTLINE_KEY, pack.equals(OUTLINE_KEY));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), PUI_KEY, pack.equals(PUI_KEY));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), ROUNDED_KEY, pack.equals(ROUNDED_KEY));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), SAM_KEY, pack.equals(SAM_KEY));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), VICTOR_KEY, pack.equals(VICTOR_KEY));
-        PrefConfig.savePrefBool(Font_Manager.getAppContext(), ACLONICA_KEY, pack.equals(ACLONICA_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa1_KEY, pack.equals(sa1_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa2_KEY, pack.equals(sa2_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa3_KEY, pack.equals(sa3_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa4_KEY, pack.equals(sa4_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa5_KEY, pack.equals(sa5_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa6_KEY, pack.equals(sa6_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa7_KEY, pack.equals(sa7_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa8_KEY, pack.equals(sa8_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa9_KEY, pack.equals(sa9_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa10_KEY, pack.equals(sa10_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa11_KEY, pack.equals(sa11_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa12_KEY, pack.equals(sa12_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa13_KEY, pack.equals(sa13_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa14_KEY, pack.equals(sa14_KEY));
+        PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa15_KEY, pack.equals(sa15_KEY));
         
     }
 
