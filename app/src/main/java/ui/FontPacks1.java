@@ -409,7 +409,6 @@ public class FontPacks1 extends AppCompatActivity {
         PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa17_KEY, pack.equals(sa17_KEY));
         PrefConfig.savePrefBool(Font_Manager.getAppContext(), sa18_KEY, pack.equals(sa18_KEY));
         
-        
     }
 
     // Function to change applied pack's bg

@@ -37,12 +37,9 @@
             </intent-filter>
         </receiver>
 
-       <!-- drop background notification show -->
-       <!--
-        <service
-            android:name=".services.BackgroundService"
-            android:enabled="true"
-            android:exported="true" /> -->
+        <activity
+            android:name=".ui.activities.IconPack"
+            android:exported="false" />
 
         <activity
             android:name=".ui.Extras"
