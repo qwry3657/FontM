@@ -40,7 +40,7 @@ public class WelcomePage extends AppCompatActivity {
         loadingDialog = new LoadingDialog(this);
 
         // Reboot button
-        if (OverlayUtils.overlayExists()) {
+                    if ((PrefConfig.loadPrefInt(this, "versionCode") < versionCode) || !ModuleUtil.moduleExists() || !OverlayUtils.overlayExists()) {
             Button reboot_phone = findViewById(R.id.reboot_phone);
             reboot_phone.setVisibility(View.VISIBLE);
             reboot_phone.setOnClickListener(v -> {
