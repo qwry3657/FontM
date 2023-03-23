@@ -158,6 +158,7 @@
                 android:paddingEnd="32.0dip"
                 android:stateListAnimator="@null"
                 android:letterSpacing="0.15"
+                android:visibility="invisible"
                 app:backgroundTint="@null" />
 
         </LinearLayout>

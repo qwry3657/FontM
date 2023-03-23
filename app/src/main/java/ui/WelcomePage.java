@@ -24,6 +24,9 @@ import com.topjohnwu.superuser.Shell;
 import java.io.IOException;
 
 public class WelcomePage extends AppCompatActivity {
+    public static void restartDevice() {
+        Shell.cmd("su -c 'svc power reboot'").exec();
+    }
 
     private final int versionCode = BuildConfig.VERSION_CODE;
     private final String versionName = BuildConfig.VERSION_NAME;
@@ -39,24 +42,12 @@ public class WelcomePage extends AppCompatActivity {
         // Loading dialog while installing module
         loadingDialog = new LoadingDialog(this);
 
-        // Reboot button
-                    if ((PrefConfig.loadPrefInt(this, "versionCode") < versionCode) || !ModuleUtil.moduleExists() || !OverlayUtils.overlayExists()) {
-            Button reboot_phone = findViewById(R.id.reboot_phone);
-            reboot_phone.setVisibility(View.VISIBLE);
-            reboot_phone.setOnClickListener(v -> {
-                LoadingDialog rebootingDialog = new LoadingDialog(WelcomePage.this);
-                rebootingDialog.show("Rebooting in 5 seconds");
-
-                runOnUiThread(() -> new Handler().postDelayed(() -> {
-                    rebootingDialog.hide();
-
-                    Shell.cmd("su -c 'svc power reboot'").exec();
-                }, 200));
-            });
-        }
-
         // Continue button
         Button checkRoot = findViewById(R.id.checkRoot);
+        
+        // Reboot button
+        Button reboot_phone = findViewById(R.id.reboot_phone);
+        reboot_phone.setOnClickListener(v -> new Handler().postDelayed(WelcomePage::restartDevice, 200));
 
         // Dialog to show if root not found
         LinearLayout warn = findViewById(R.id.warn);
@@ -89,6 +80,8 @@ public class WelcomePage extends AppCompatActivity {
                                     }, 10);
                                 } else {
                                     warn.setVisibility(View.VISIBLE);
+                                    checkRoot.setVisibility(View.GONE);
+                                    reboot_phone.setVisibility(View.VISIBLE);
                                     warning.setText("Reboot your device first!");
                                 }
                             });
@@ -102,10 +95,14 @@ public class WelcomePage extends AppCompatActivity {
                     }
                 } else {
                     warn.setVisibility(View.VISIBLE);
+                    checkRoot.setVisibility(View.GONE);
+                    reboot_phone.setVisibility(View.VISIBLE);
                     warning.setText("Use Magisk to root your device!");
                 }
             } else {
                 warn.setVisibility(View.VISIBLE);
+                checkRoot.setVisibility(View.GONE);
+                reboot_phone.setVisibility(View.VISIBLE);
                 warning.setText("Looks like your device is not rooted!");
             }
         });
