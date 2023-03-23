@@ -26,7 +26,7 @@
     <color name="neumorph_outline_start">#FFE50000</color>
     <color name="neumorph_outline_end">#FFFE97FF</color>
     <color name="switch_track_layer">#B3FFFFFF</color>
-    <color name="splash_logo">@color/colorAccentDark</color>
+    <color name="splash_logo">@color/colorBackground</color>
     <color name="switch_track_active">@color/colorAccent</color>
     <color name="switch_track_inactive">#dddddd</color>
     <color name="switch_thumb_active">@color/white</color>
