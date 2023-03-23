@@ -2,28 +2,18 @@
 <resources>
     <color name="enable">#ffb597b6</color>
     <color name="sa">#FF003A48</color>
-    <color name="colorAccent">@color/material_dynamic_primary90</color>
-    <color name="colorAccentDark">@color/material_dynamic_primary70</color>
-    <color name="colorAccentDarker">@color/colorAccent</color>
-    <color name="colorAccentVariant">@color/material_dynamic_tertiary90</color>
+    <color name="colorAccent">#fff0b6d7</color>
     <color name="rippleAccent">#1AFFFFFF</color>
     <color name="colorBackground">#ff000000</color>
-    <color name="colorContainer">@color/material_dynamic_secondary20</color>
+    <color name="colorContainer">#ff7e00ff</color>
     <color name="colorContainerOverlay">#ff44697e</color>
     <color name="textColorPrimary">#ffffffff</color>
-    <color name="textColorPrimaryInverse">@color/material_dynamic_neutral10</color>
     <color name="textColorSecondary">#ffffffff</color>
-    <color name="textColorSecondaryLight">@color/material_dynamic_neutral90</color>
-    <color name="colorSuccess">@color/material_dynamic_primary80</color>
     <color name="colorBackground2">#14FFFFFF</color>
     <color name="offStateColor2">#1AFFFFFF</color>
     <color name="shadow">#40000000</color>
     <color name="neumorph_outline_end">#c9d400fa</color>
     <color name="neumorph_outline_start">#c900BCD4</color>
     <color name="switch_track_layer">#B3000000</color>
-    <color name="splash_logo">@color/material_dynamic_primary70</color>
-    <color name="switch_track_active">@color/colorAccentDarker</color>
-    <color name="switch_track_inactive">@color/material_dynamic_neutral_variant30</color>
-    <color name="switch_thumb_active">@color/material_dynamic_secondary30</color>
-    <color name="switch_thumb_inactive">@color/material_dynamic_neutral_variant60</color>
+    <color name="splash_logo">#ff000000</color>
 </resources>
