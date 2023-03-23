@@ -89,7 +89,7 @@ public class WelcomePage extends AppCompatActivity {
                                 } else {
                                     warn.setVisibility(View.VISIBLE);
                                     checkRoot.setVisibility(View.GONE);
-                                    reboot_phone.setVisibility(View.VISIBLE);
+                                    reboot_now.setVisibility(View.VISIBLE);
                                     warning.setText("Reboot your device first!");
                                 }
                             });
