@@ -28,7 +28,7 @@
     <color name="offStateColor3">#40000000</color>
     <color name="shadow">#14000000</color>
     <color name="neumorph_outline_start">#FFE50000</color>
-    <color name="neumorph_outline_end">#FF67FF07</color>
+    <color name="neumorph_outline_end">#FFFE97FF</color>
     <color name="switch_track_layer">#B3FFFFFF</color>
     <color name="pixel_black_bg">@color/material_dynamic_neutral_variant10</color>
     <color name="splash_logo">@color/colorAccentDark</color>
