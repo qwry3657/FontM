@@ -41,9 +41,9 @@ public class WelcomePage extends AppCompatActivity {
 
         // Reboot button
         if (OverlayUtils.overlayExists()) {
-            Button reboot_now = findViewById(R.id.reboot_phone);
+            Button reboot_phone = findViewById(R.id.reboot_phone);
             reboot_phone.setVisibility(View.VISIBLE);
-            reboot_now.setOnClickListener(v -> {
+            reboot_phone.setOnClickListener(v -> {
                 LoadingDialog rebootingDialog = new LoadingDialog(WelcomePage.this);
                 rebootingDialog.show("Rebooting in 5 seconds");
 
