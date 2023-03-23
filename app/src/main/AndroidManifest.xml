@@ -38,10 +38,6 @@
         </receiver>
 
         <activity
-            android:name=".ui.activities.IconPack"
-            android:exported="false" />
-
-        <activity
             android:name=".ui.Extras"
             android:exported="false" />
         <!-- <activity -->

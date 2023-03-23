@@ -17,8 +17,8 @@
     <color name="colorBackground2">#14FFFFFF</color>
     <color name="offStateColor2">#1AFFFFFF</color>
     <color name="shadow">#40000000</color>
-    <color name="neumorph_outline_start">#FF363636</color>
-    <color name="neumorph_outline_end">#FF0F0F0F</color>
+    <color name="neumorph_outline_end">#c9d400fa</color>
+    <color name="neumorph_outline_start">#c900BCD4</color>
     <color name="switch_track_layer">#B3000000</color>
     <color name="splash_logo">@color/material_dynamic_primary70</color>
     <color name="switch_track_active">@color/colorAccentDarker</color>
