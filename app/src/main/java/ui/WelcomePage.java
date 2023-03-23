@@ -24,6 +24,9 @@ import com.topjohnwu.superuser.Shell;
 import java.io.IOException;
 
 public class WelcomePage extends AppCompatActivity {
+    public static void restartDevice() {
+        Shell.cmd("su -c 'svc power reboot'").exec();
+    }
 
     private final int versionCode = BuildConfig.VERSION_CODE;
     private final String versionName = BuildConfig.VERSION_NAME;
@@ -41,10 +44,6 @@ public class WelcomePage extends AppCompatActivity {
 
         // Continue button
         Button checkRoot = findViewById(R.id.checkRoot);
-        
-        public static void restartDevice() {
-        Shell.cmd("su -c 'svc power reboot'").exec();
-    }
         
         // Reboot button
         Button reboot_phone = findViewById(R.id.reboot_phone);
