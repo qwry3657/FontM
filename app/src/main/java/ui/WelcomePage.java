@@ -84,6 +84,12 @@ public class WelcomePage extends AppCompatActivity {
                                     reboot_phone.setVisibility(View.VISIBLE);
                                     warning.setText("Reboot your device first!");
                                 }
+                                } else {
+                                    warn.setVisibility(View.GONE);
+                                    checkRoot.setVisibility(View.VISIBLE);
+                                    reboot_phone.setVisibility(View.GONE);
+                                    warning.setText("Reboot your device first!");
+                                }
                             });
                         };
                         Thread thread = new Thread(runnable);
