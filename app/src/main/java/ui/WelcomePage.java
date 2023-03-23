@@ -40,6 +40,7 @@ public class WelcomePage extends AppCompatActivity {
         loadingDialog = new LoadingDialog(this);
 
         // Reboot button
+        if (RootUtil.isDeviceRooted()) {
             Button reboot_now = findViewById(R.id.reboot_phone);
             reboot_now.setOnClickListener(v -> {
                 LoadingDialog rebootingDialog = new LoadingDialog(WelcomePage.this);
