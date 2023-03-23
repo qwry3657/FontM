@@ -39,12 +39,11 @@ public class WelcomePage extends AppCompatActivity {
         // Loading dialog while installing module
         loadingDialog = new LoadingDialog(this);
 
-        // Continue button
-        if (PrefConfig.loadPrefInt(Font_Manager.getAppContext(), "versionCode") < BuildConfig.VERSION_CODE && PrefConfig.loadPrefInt(Font_Manager.getAppContext(), "versionCode") != 0) {
+        // Reboot button
             Button reboot_now = findViewById(R.id.reboot_phone);
             reboot_now.setOnClickListener(v -> {
                 LoadingDialog rebootingDialog = new LoadingDialog(WelcomePage.this);
-                rebootingDialog.show("Rebooting in 3 seconds");
+                rebootingDialog.show("Rebooting in 5 seconds");
 
                 runOnUiThread(() -> new Handler().postDelayed(() -> {
                     rebootingDialog.hide();

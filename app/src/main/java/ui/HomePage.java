@@ -47,6 +47,12 @@ public class HomePage extends AppCompatActivity {
 
         PrefConfig.savePrefInt(this, "versionCode", BuildConfig.VERSION_CODE);
         getBootId();
+        
+        // Header
+        CollapsingToolbarLayout collapsing_toolbar = findViewById(R.id.collapsing_toolbar);
+        collapsing_toolbar.setTitle("Font Manager");
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         // Home page list items
         container = (ViewGroup) findViewById(R.id.home_page_list);
