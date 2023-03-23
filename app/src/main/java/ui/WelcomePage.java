@@ -40,8 +40,19 @@ public class WelcomePage extends AppCompatActivity {
         loadingDialog = new LoadingDialog(this);
 
         // Reboot button
-        Button reboot_phone = findViewById(R.id.reboot_phone);
-        reboot_phone.setOnClickListener(v -> new Handler().postDelayed(SystemUtil::restartDevice, 200));
+        if (RootUtil.isDeviceRooted()) {
+            Button reboot_now = findViewById(R.id.reboot_phone);
+            reboot_now.setOnClickListener(v -> {
+                LoadingDialog rebootingDialog = new LoadingDialog(WelcomePage.this);
+                rebootingDialog.show("Rebooting in 5 seconds");
+
+                runOnUiThread(() -> new Handler().postDelayed(() -> {
+                    rebootingDialog.hide();
+
+                    Shell.cmd("su -c 'svc power reboot'").exec();
+                }, 3000));
+            });
+        }
 
         // Continue button
         Button checkRoot = findViewById(R.id.checkRoot);
