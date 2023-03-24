@@ -2,7 +2,6 @@
 <resources>
     <color name="enable">#ffb597b6</color>
     <color name="sa">#FF003A48</color>
-    
     <color name="rippleAccent">#1AFFFFFF</color>
     <color name="colorBackground">#ff000000</color>
     <color name="colorContainer">#ff7e00ff</color>
