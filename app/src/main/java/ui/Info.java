@@ -31,14 +31,6 @@ public class Info extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info);
         
-        // Header
-        CollapsingToolbarLayout collapsing_toolbar = findViewById(R.id.collapsing_toolbar);
-        collapsing_toolbar.setTitle("ㅤㅤㅤ");
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-
         // App version
         ViewGroup appInfo = findViewById(R.id.appInfo);
         appInfo.setOnClickListener(v -> {
@@ -53,7 +45,7 @@ public class Info extends AppCompatActivity {
         TextView appVersion = findViewById(R.id.appVersion);
         appVersion.setText("Version");
         TextView versionCodeAndName = findViewById(R.id.versionCodeAndName);
-        versionCodeAndName.setText(BuildConfig.VERSION_NAME + " (" + BuildConfig.VERSION_CODE + ")");
+        versionCodeAndName.setText(BuildConfig.VERSION_NAME);
 
         // Telegram
         ViewGroup telegramChannel = findViewById(R.id.telegramChannel);
