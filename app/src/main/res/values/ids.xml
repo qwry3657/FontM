@@ -5,6 +5,7 @@
     <item name="home_mediaPlayer" type="id" />
     <item name="home_progressBar" type="id" />
     <item name="home_info" type="id" />
+    <item name="home_extras" type="id" />
     <item name="home_bn" type="id" />
     
         <!-- Icon Pack List -->
