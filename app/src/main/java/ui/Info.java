@@ -117,8 +117,6 @@ public class Info extends AppCompatActivity {
             i.setData(Uri.parse(url));
             startActivity(i);
         });
-        ImageView ic_healer99 = findViewById(R.id.ic_healer99);
-        ic_healer99.setBackgroundResource(R.drawable.ic_healer99);
         TextView credits1 = findViewById(R.id.credits1);
         credits1.setText("Healer's Port Hub");
         TextView creditsTo2 = findViewById(R.id.creditsTo2);
