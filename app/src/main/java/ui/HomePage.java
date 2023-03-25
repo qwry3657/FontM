@@ -113,10 +113,10 @@ public class HomePage extends AppCompatActivity {
             startActivity(intent);
         });
         
-        // Media player item onClick
+        // Extras
         home_extras = findViewById(R.id.home_extras);
         home_extras.setOnClickListener(v -> {
-            Intent intent = new Intent(HomePage.this, MediaPlayer.class);
+            Intent intent = new Intent(HomePage.this, Extras.class);
             startActivity(intent);
         });
 
