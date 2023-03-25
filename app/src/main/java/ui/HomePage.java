@@ -35,7 +35,7 @@ public class HomePage extends AppCompatActivity {
 
     public static boolean isServiceRunning = false;
     private final String TAG = "WelcomePage";
-    LinearLayout home_fontPack1, home_mediaPlayer, home_progressBar, home_info;
+    LinearLayout home_fontPack1, home_extras, home_mediaPlayer, home_progressBar, home_info;
     private ViewGroup container;
 
     @Override
@@ -58,6 +58,7 @@ public class HomePage extends AppCompatActivity {
         container = (ViewGroup) findViewById(R.id.home_page_list);
         addItem(R.id.home_fontPack1, "Font Pack 1", "Change your stock font");
         addItem(R.id.home_mediaPlayer, "Media Player", "Change how media player looks");
+        addItem(R.id.home_extras, "Extras", "Additions tweaks and settings");
         // addItem(R.id.home_progressBar, "Progress Bar", "Change progress bar style");
         addItem(R.id.home_info, "About", "Information about this app");
 
@@ -110,6 +111,17 @@ public class HomePage extends AppCompatActivity {
         home_mediaPlayer.setOnClickListener(v -> {
             Intent intent = new Intent(HomePage.this, MediaPlayer.class);
             startActivity(intent);
+        });
+        
+        // Extras item onClick
+        home_extras = findViewById(R.id.home_extras);
+        home_extras.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.color_b));
+        home_extras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePage.this, Extras.class);
+                startActivity(intent);
+            }
         });
 
         /* Progress bar item onClick
