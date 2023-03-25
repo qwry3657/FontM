@@ -32,17 +32,6 @@ jobs:
           gradlePath: app/build.gradle
           versionCode: ${{github.run_number}}
           versionName: "${{ env.VERSION_NAME }}(#${{github.run_number}})"
-
-      - name: Build with Gradle
-        run: ./gradlew assembleDebug
-
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: "FontM ${{ env.VERSION_NAME }}(#${{github.run_number}})"
-          path: app/build/outputs/apk/debug/*.apk
-          retention-days: 1
-          if-no-files-found: error
           
       - name: Build with Gradle
         run: ./gradlew assembleRelease
@@ -51,7 +40,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: "FontM ${{ env.VERSION_NAME }}(#${{github.run_number}})"
-          path: app/build/outputs/apk/Release/*.apk
+          path: app/build/outputs/apk/release/*.apk
           retention-days: 1
           if-no-files-found: error
 
