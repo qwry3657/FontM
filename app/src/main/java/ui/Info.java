@@ -45,7 +45,7 @@ public class Info extends AppCompatActivity {
         TextView appVersion = findViewById(R.id.appVersion);
         appVersion.setText("Version");
         TextView versionCodeAndName = findViewById(R.id.versionCodeAndName);
-        versionCodeAndName.setText("ㅤ");
+        versionCodeAndName.setText(BuildConfig.VERSION_NAME);
 
         // Telegram
         ViewGroup telegramChannel = findViewById(R.id.telegramChannel);
