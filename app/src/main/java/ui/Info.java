@@ -58,7 +58,7 @@ public class Info extends AppCompatActivity {
         ImageView ic_telegram = findViewById(R.id.ic_telegram);
         ic_telegram.setBackgroundResource(R.drawable.ic_telegram);
         TextView telegramTitle = findViewById(R.id.telegramTitle);
-        telegramTitle.setText("Telegram");
+        telegramTitle.setText("Telegram Channel");
         TextView telegramDesc = findViewById(R.id.telegramDesc);
         telegramDesc.setText("Follow to get latest news & updates.");
 
@@ -77,7 +77,7 @@ public class Info extends AppCompatActivity {
         TextView credits2 = findViewById(R.id.credits2);
         credits2.setText("Sã Śâjjãd");
         TextView creditsTo1 = findViewById(R.id.creditsTo1);
-        creditsTo1.setText("Nub.");
+        creditsTo1.setText("Author");
 
         // Drdisagree
         ViewGroup drdisagree = findViewById(R.id.drdisagree);
@@ -109,10 +109,10 @@ public class Info extends AppCompatActivity {
         TextView iconify2 = findViewById(R.id.iconify2);
         iconify2.setText("For base template.");
         
-        // Min Aung Kyaw
+        // Healer's Port Hub
         ViewGroup healer99 = findViewById(R.id.healer99);
         healer99.setOnClickListener(v -> {
-            String url = "https://t.me/healer99";
+            String url = "https://t.me/flipxroms";
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);
@@ -120,7 +120,7 @@ public class Info extends AppCompatActivity {
         ImageView ic_healer99 = findViewById(R.id.ic_healer99);
         ic_healer99.setBackgroundResource(R.drawable.ic_healer99);
         TextView credits1 = findViewById(R.id.credits1);
-        credits1.setText("Min Aung Kyaw");
+        credits1.setText("Healer's Port Hub");
         TextView creditsTo2 = findViewById(R.id.creditsTo2);
         creditsTo2.setText("For Awesome idea.");
         
