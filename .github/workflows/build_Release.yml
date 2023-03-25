@@ -43,4 +43,15 @@ jobs:
           path: app/build/outputs/apk/debug/*.apk
           retention-days: 1
           if-no-files-found: error
+          
+      - name: Build with Gradle
+        run: ./gradlew assembleRelease
+
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: "FontM ${{ env.VERSION_NAME }}(#${{github.run_number}})"
+          path: app/build/outputs/apk/Release/*.apk
+          retention-days: 1
+          if-no-files-found: error
 
