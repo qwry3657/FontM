@@ -18,7 +18,7 @@
     <color name="colorContainerOverlay">#ffb597b6</color>
     <color name="textColorPrimary">#ff000000</color>
     <color name="textColorSecondary">#ff000000</color>
-    <color name="textColorSecondaryLight">#ff000000</color>
+    <color name="textColorSecondaryLight">#FFD4F7FF</color>
     <color name="colorSuccess">#ff57ffc8</color>
     <color name="colorBackground2">#14000000</color>
     <color name="offStateColor">@color/colorBackground</color>

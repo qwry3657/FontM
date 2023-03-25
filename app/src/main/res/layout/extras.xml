@@ -30,7 +30,7 @@
                 android:layout_marginStart="@dimen/container_marginSide"
                 android:layout_marginEnd="@dimen/container_marginSide"
                 android:layout_marginBottom="@dimen/container_margin"
-                android:background="@drawable/container_outline"
+                android:background="@drawable/container"
                 android:orientation="vertical"
                 android:paddingHorizontal="20dp"
                 android:paddingTop="@dimen/container_padding"

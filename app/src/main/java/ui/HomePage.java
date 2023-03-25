@@ -113,15 +113,11 @@ public class HomePage extends AppCompatActivity {
             startActivity(intent);
         });
         
-        // Extras item onClick
+        // Media player item onClick
         home_extras = findViewById(R.id.home_extras);
-        home_extras.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.color_b));
-        home_extras.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomePage.this, Extras.class);
-                startActivity(intent);
-            }
+        home_extras.setOnClickListener(v -> {
+            Intent intent = new Intent(HomePage.this, MediaPlayer.class);
+            startActivity(intent);
         });
 
         /* Progress bar item onClick

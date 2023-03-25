@@ -65,7 +65,7 @@ public class Extras extends AppCompatActivity {
         Button button_disableEverything = findViewById(R.id.button_disableEverything);
 
         list_title_disableEverything.setText("Disable Everything");
-        list_desc_disableEverything.setText("Disable all the applied UI, changes done by Uwuify.");
+        list_desc_disableEverything.setText("Disable all the applied UI, changes done by FontM.");
 
         button_disableEverything.setOnClickListener(new View.OnClickListener() {
             @Override

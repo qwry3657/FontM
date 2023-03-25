@@ -3,9 +3,9 @@
     <item>
         <shape android:shape="rectangle">
             <gradient
-                android:angle="270"
-                android:endColor="@color/colorAccent"
-                android:startColor="@color/colorAccent"
+                android:angle="90"
+                android:endColor="@color/neumorph_outline_end"
+                android:startColor="@color/neumorph_outline_start"
                 android:type="linear" />
             <corners android:radius="22.0dp" />
         </shape>
@@ -18,7 +18,7 @@
         <shape android:shape="rectangle">
             <gradient
                 android:angle="90"
-                android:endColor="@color/enable"
+                android:endColor="@color/neumorph_outline_end"
                 android:startColor="@color/enable"
                 android:type="linear" />
             <corners android:radius="20.0dp" />
