@@ -48,7 +48,6 @@
     </style>
 
     <style name="Theme.Font_Manager.SplashScreen" parent="Theme.SplashScreen">
-        <item name="android:windowSplashScreenBackground">@color/colorBackground</item>
         <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
         <item name="android:windowSplashScreenIconBackgroundColor">#ff132535</item>
         <item name="android:windowSplashScreenBrandingImage">@drawable/ic_branding</item>
