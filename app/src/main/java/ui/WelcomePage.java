@@ -96,13 +96,13 @@ public class WelcomePage extends AppCompatActivity {
                 } else {
                     warn.setVisibility(View.VISIBLE);
                     checkRoot.setVisibility(View.GONE);
-                    reboot_phone.setVisibility(View.VISIBLE);
+                    reboot_phone.setVisibility(View.GONE);
                     warning.setText("Use Magisk to root your device!");
                 }
             } else {
                 warn.setVisibility(View.VISIBLE);
                 checkRoot.setVisibility(View.GONE);
-                reboot_phone.setVisibility(View.VISIBLE);
+                reboot_phone.setVisibility(View.GONE);
                 warning.setText("Looks like your device is not rooted!");
             }
         });
