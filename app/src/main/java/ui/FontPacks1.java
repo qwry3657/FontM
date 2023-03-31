@@ -78,7 +78,7 @@ public class FontPacks1 extends AppCompatActivity {
         addItem(R.id.sa4_container, "Linnote Bold", "Tap to enable/desable font.", R.id.sa4_enable, R.id.sa4_disable);
         addItem(R.id.sa5_container, "Tinkerbell", "Tap to enable/desable font.", R.id.sa5_enable, R.id.sa5_disable);
         addItem(R.id.sa6_container, "Samsung One", "Tap to enable/desable font.", R.id.sa6_enable, R.id.sa6_disable);
-        addItem(R.id.sa7_container, "Corporativ Sans sa12", "Tap to enable/desable font.", R.id.sa7_enable, R.id.sa7_disable);
+        addItem(R.id.sa7_container, "Corporativ Sans", "Tap to enable/desable font.", R.id.sa7_enable, R.id.sa7_disable);
         addItem(R.id.sa8_container, "FluidSans", "Tap to enable/desable font.", R.id.sa8_enable, R.id.sa8_disable);
         addItem(R.id.sa9_container, "Dosis", "Tap to enable/desable font.", R.id.sa9_enable, R.id.sa9_disable);
         addItem(R.id.sa10_container, "Sfpro", "Tap to enable/desable font.", R.id.sa10_enable, R.id.sa10_disable);
